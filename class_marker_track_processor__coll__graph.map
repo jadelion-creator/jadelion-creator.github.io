@@ -1,0 +1,5 @@
+<map id="MarkerTrackProcessor" name="MarkerTrackProcessor">
+<area shape="rect" id="node1" title="This track processor will connect the marker track to the graph." alt="" coords="5,155,151,182"/>
+<area shape="rect" id="node2" href="$class_track_processor.html" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="24,80,132,107"/>
+<area shape="rect" id="node3" href="$interface_simple_1_1_timeline_1_1_i_track_processor.html" title=" " alt="" coords="22,5,134,32"/>
+</map>

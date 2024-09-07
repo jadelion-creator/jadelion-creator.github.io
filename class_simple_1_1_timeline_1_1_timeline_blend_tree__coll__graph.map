@@ -1,0 +1,11 @@
+<map id="Simple.Timeline.TimelineBlendTree" name="Simple.Timeline.TimelineBlendTree">
+<area shape="rect" id="node1" title="This is only intended as an example of what could possibly be created with TimelineMixer...." alt="" coords="36,215,190,257"/>
+<area shape="rect" id="node2" href="$class_event_variable.html" title=" " alt="" coords="5,103,152,130"/>
+<area shape="rect" id="node3" href="$class_simple_1_1_timeline_1_1_timeline_component.html" title=" " alt="" coords="211,95,364,137"/>
+<area shape="rect" id="node6" href="$class_simple_1_1_timeline_1_1_timeline_mixer_playable.html" title=" " alt="" coords="391,215,544,257"/>
+<area shape="rect" id="node4" title=" " alt="" coords="154,5,264,32"/>
+<area shape="rect" id="node5" href="$class_event_variable.html" title=" " alt="" coords="289,5,444,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="479,103,608,130"/>
+<area shape="rect" id="node8" href="$class_simple_1_1_timeline_1_1_track_processor_manager.html" title="Automatically discovers all classes that inherit from TrackProcessor and have the TrackProcessor attr..." alt="" coords="633,95,828,137"/>
+<area shape="rect" id="node9" href="$interface_simple_1_1_timeline_1_1_i_track_processor.html" title=" " alt="" coords="631,5,830,32"/>
+</map>

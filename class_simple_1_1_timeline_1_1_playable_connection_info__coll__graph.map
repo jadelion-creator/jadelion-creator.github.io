@@ -1,0 +1,5 @@
+<map id="Simple.Timeline.PlayableConnectionInfo" name="Simple.Timeline.PlayableConnectionInfo">
+<area shape="rect" id="node1" title="Store information about connections on the PlayableGraph and set / get weights between connections" alt="" coords="92,95,252,137"/>
+<area shape="rect" id="node2" href="$class_event_variable.html" title=" " alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node3" href="$class_simple_1_1_timeline_1_1_binding_data.html" title="Gathers information about track bindings from the Playable Director, used to set bindings on the cust..." alt="" coords="176,5,355,32"/>
+</map>

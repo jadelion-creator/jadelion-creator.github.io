@@ -1,0 +1,13 @@
+<map id="Simple.Timeline.PlayState" name="Simple.Timeline.PlayState">
+<area shape="rect" id="node1" title=" " alt="" coords="730,219,895,246"/>
+<area shape="rect" id="node2" href="$class_simple_1_1_timeline_1_1_timeline_component.html" title=" " alt="" coords="371,143,524,185"/>
+<area shape="rect" id="node5" href="$class_simple_1_1_timeline_1_1_timeline_mixer_playable.html" title=" " alt="" coords="736,75,889,117"/>
+<area shape="rect" id="node3" title=" " alt="" coords="50,121,160,148"/>
+<area shape="rect" id="node4" href="$class_event_variable.html" title=" " alt="" coords="27,172,183,199"/>
+<area shape="rect" id="node6" title=" " alt="" coords="383,5,512,32"/>
+<area shape="rect" id="node7" href="$class_simple_1_1_timeline_1_1_track_processor_manager.html" title="Automatically discovers all classes that inherit from TrackProcessor and have the TrackProcessor attr..." alt="" coords="350,56,545,98"/>
+<area shape="rect" id="node8" href="$interface_simple_1_1_timeline_1_1_i_track_processor.html" title=" " alt="" coords="5,64,205,91"/>
+<area shape="rect" id="node9" href="$class_simple_1_1_timeline_1_1_playable_connection_info.html" title="Store information about connections on the PlayableGraph and set / get weights between connections" alt="" coords="367,234,528,276"/>
+<area shape="rect" id="node10" href="$class_event_variable.html" title=" " alt="" coords="32,237,178,264"/>
+<area shape="rect" id="node11" href="$class_simple_1_1_timeline_1_1_binding_data.html" title="Gathers information about track bindings from the Playable Director, used to set bindings on the cust..." alt="" coords="15,288,195,315"/>
+</map>

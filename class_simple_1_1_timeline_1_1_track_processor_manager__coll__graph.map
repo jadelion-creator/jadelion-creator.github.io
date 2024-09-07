@@ -1,0 +1,4 @@
+<map id="Simple.Timeline.TrackProcessorManager" name="Simple.Timeline.TrackProcessorManager">
+<area shape="rect" id="node1" title="Automatically discovers all classes that inherit from TrackProcessor and have the TrackProcessor attr..." alt="" coords="7,95,203,137"/>
+<area shape="rect" id="node2" href="$interface_simple_1_1_timeline_1_1_i_track_processor.html" title=" " alt="" coords="5,5,205,32"/>
+</map>

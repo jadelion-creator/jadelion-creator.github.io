@@ -1,0 +1,4 @@
+<map id="Simple.Timeline.PlayState" name="Simple.Timeline.PlayState">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" href="$class_simple_1_1_timeline_1_1_fade_to.html" title="Part of a simple state machine that TimelineMixerPlayable makes use of, updates the weights of tracks..." alt="" coords="12,80,164,107"/>
+</map>
