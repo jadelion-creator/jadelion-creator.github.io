@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['balanceweights_0',['BalanceWeights',['../class_animation_balancer.html#ab64bd8b12e147be4c33503e115cac571',1,'AnimationBalancer']]]
+  ['balanceweights_0',['BalanceWeights',['../class_simple_1_1_timeline_1_1_animation_balancer.html#aee12a7e81e38913d5749bb82122795c6',1,'Simple::Timeline::AnimationBalancer']]]
 ];

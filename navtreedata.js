@@ -25,14 +25,17 @@
 var NAVTREE =
 [
   [ "Timeline Mixer Documentation", "index.html", [
-    [ "Getting Started", "md_doc_pages__getting_started.html", [
-      [ "Playback", "md_doc_pages__getting_started.html#autotoc_md1", null ],
-      [ "Fast Forward / Rewind", "md_doc_pages__getting_started.html#autotoc_md2", null ]
+    [ "Getting Started", "md_doc_pages__1__getting_started.html", [
+      [ "Playback", "md_doc_pages__1__getting_started.html#autotoc_md1", null ],
+      [ "Fast Forward / Rewind", "md_doc_pages__1__getting_started.html#autotoc_md2", null ]
     ] ],
-    [ "Timeline Mixer Window", "md_doc_pages__timeline_mixer_window.html", null ],
-    [ "Track Processors", "md_doc_pages__track_processors.html", [
-      [ "Custom Track Processors", "md_doc_pages__track_processors.html#autotoc_md7", null ]
+    [ "Timeline Mixer Window", "md_doc_pages__2__timeline_mixer_window.html", null ],
+    [ "Track Processors", "md_doc_pages__3__track_processors.html", [
+      [ "Custom Track Processors", "md_doc_pages__3__track_processors.html#autotoc_md7", null ],
+      [ "The PlayableNode class", "md_doc_pages__3__track_processors.html#autotoc_md8", null ]
     ] ],
+    [ "Rebinding tracks at runtime", "md_doc_pages__4__rebinding_tracks.html", null ],
+    [ "Found a bug? Feature request?", "md_doc_pages__5__bugs.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -41,7 +44,8 @@ var NAVTREE =
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Enumerations", "functions_enum.html", null ]
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ]
   ] ]

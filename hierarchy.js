@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "AnimationBalancer", "class_animation_balancer.html", null ],
+    [ "Simple.Timeline.AnimationBalancer", "class_simple_1_1_timeline_1_1_animation_balancer.html", null ],
     [ "Attribute", null, [
       [ "TrackProcessorAttribute", "class_track_processor_attribute.html", null ]
     ] ],
@@ -24,7 +24,6 @@ var hierarchy =
     ] ],
     [ "Simple.Timeline.LoopMode", "class_simple_1_1_timeline_1_1_loop_mode.html", null ],
     [ "MonoBehaviour", null, [
-      [ "Simple.Timeline.TimelineCharacterController", "class_simple_1_1_timeline_1_1_timeline_character_controller.html", null ],
       [ "Simple.Timeline.TimelineComponent", "class_simple_1_1_timeline_1_1_timeline_component.html", [
         [ "Simple.Timeline.TimelineMixer", "class_simple_1_1_timeline_1_1_timeline_mixer.html", null ]
       ] ]
@@ -34,12 +33,12 @@ var hierarchy =
       [ "Simple.Timeline.TimelineMixerPlayable", "class_simple_1_1_timeline_1_1_timeline_mixer_playable.html", null ]
     ] ],
     [ "Simple.Timeline.PlayableConnectionInfo", "class_simple_1_1_timeline_1_1_playable_connection_info.html", null ],
+    [ "Simple.Timeline.PlayableNode", "class_simple_1_1_timeline_1_1_playable_node.html", null ],
     [ "Simple.Timeline.PlayState", "class_simple_1_1_timeline_1_1_play_state.html", [
       [ "Simple.Timeline.FadeTo", "class_simple_1_1_timeline_1_1_fade_to.html", null ]
     ] ],
     [ "ResizeList", "class_resize_list.html", null ],
     [ "Simple.Timeline.SimpleEditorUtilities", "class_simple_1_1_timeline_1_1_simple_editor_utilities.html", null ],
     [ "Simple.Timeline.SimpleTimelineUtilities", "class_simple_1_1_timeline_1_1_simple_timeline_utilities.html", null ],
-    [ "Simple.Timeline.TimelineBlendTree", "class_simple_1_1_timeline_1_1_timeline_blend_tree.html", null ],
     [ "Simple.Timeline.TrackProcessorManager", "class_simple_1_1_timeline_1_1_track_processor_manager.html", null ]
 ];

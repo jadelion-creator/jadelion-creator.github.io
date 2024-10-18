@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['timeline_20mixer_20documentation_0',['Timeline Mixer Documentation',['../index.html',1,'']]],
-  ['timeline_20mixer_20window_1',['Timeline Mixer Window',['../md_doc_pages__timeline_mixer_window.html',1,'']]],
-  ['track_20processors_2',['Track Processors',['../md_doc_pages__track_processors.html',1,'']]]
+  ['getting_20started_0',['Getting Started',['../md_doc_pages__1__getting_started.html',1,'']]]
 ];

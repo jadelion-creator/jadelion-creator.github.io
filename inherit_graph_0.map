@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_animation_balancer.html" title="Keeps animation mixer playable input values from becoming overweight. If the total weights on an anim..." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node2" href="$class_track_processor_attribute.html" title=" " alt="" coords="120,5,272,32"/>
 </map>

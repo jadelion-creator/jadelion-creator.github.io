@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('md_doc_pages__getting_started.html',''
 <p >The selected Timeline will be placed in the Playable Director, and the Timeline Window will open. Any changes to bindings or exposed references will be saved in the Playable Director and used to set up Timeline Mixer.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Playback</h1>
-<p >In your script, add the namespace: <code>using <a class="el" href="namespace_simple_1_1_timeline.html">Simple.Timeline</a>;</code></p>
+<p >In your script, add the namespace: <code>using <a class="el" href="namespace_simple_1_1_timeline.html" title="Keeps animation mixer playable input values from becoming overweight. If the total weights on an anim...">Simple.Timeline</a>;</code></p>
 <p >Get a reference to the Timeline Mixer component and use the playback methods:</p>
 <div class="fragment"><div class="line">TimelineMixer timelineMixer = GetComponent&lt;TimelineMixer&gt;();</div>
 <div class="line"> </div>
@@ -111,6 +111,8 @@ Playback</h1>
 </div><!-- fragment --><ul>
 <li><code>timelineAsset</code>: The Unity Timeline to play.</li>
 <li><code>startTime</code>: The timeline time to start playback from.</li>
+<li><code>fadeTime</code>: The transition time in seconds.</li>
+<li><code>targetWeight</code>: Unique to the FadeTo method, float 0 - 1, indicates the target strength of the timeline. Partial fades.</li>
 <li><code>loopPlayback</code>: Can be null, or equal to <code>LoopMode.loop</code> or <code>LoopMode.Endless</code>.</li>
 </ul>
 <blockquote class="doxtable">

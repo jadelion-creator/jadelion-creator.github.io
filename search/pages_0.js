@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getting_20started_0',['Getting Started',['../md_doc_pages__getting_started.html',1,'']]]
+  ['found_20a_20bug_3f_20feature_20request_3f_0',['Found a bug? Feature request?',['../md_doc_pages__5__bugs.html',1,'']]]
 ];

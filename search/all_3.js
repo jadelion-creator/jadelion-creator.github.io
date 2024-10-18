@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['eventvariable_0',['EventVariable',['../class_event_variable.html',1,'']]],
-  ['eventvariable_3c_20float_20_3e_1',['EventVariable&lt; float &gt;',['../class_event_variable.html',1,'']]],
-  ['eventvariable_3c_20mode_20_3e_2',['EventVariable&lt; Mode &gt;',['../class_event_variable.html',1,'']]]
+  ['disconnecttrack_0',['DisconnectTrack',['../class_simple_1_1_timeline_1_1_playable_node.html#a10a7114076149c40661894290ad9a006',1,'Simple.Timeline.PlayableNode.DisconnectTrack()'],['../class_audio_track_processor.html#a9a976d95d97b4373419ec88dbb048097',1,'AudioTrackProcessor.DisconnectTrack()'],['../class_track_processor.html#ad8d3bbc68a3d9d9c163dbda710e7f000',1,'TrackProcessor.DisconnectTrack()']]]
 ];

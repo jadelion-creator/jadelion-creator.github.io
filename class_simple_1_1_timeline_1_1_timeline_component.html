@@ -88,7 +88,6 @@ $(document).ready(function(){initNavTree('class_simple_1_1_timeline_1_1_timeline
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_simple_1_1_timeline_1_1_timeline_component-members.html">List of all members</a>  </div>
@@ -104,7 +103,7 @@ Inheritance diagram for Simple.Timeline.TimelineComponent:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aaf041e22033651f357bcb0c3bb08eb83"><td class="memItemLeft" align="right" valign="top"><a id="aaf041e22033651f357bcb0c3bb08eb83" name="aaf041e22033651f357bcb0c3bb08eb83"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_component.html#aaf041e22033651f357bcb0c3bb08eb83">Mode</a> </td></tr>
-<tr class="memdesc:aaf041e22033651f357bcb0c3bb08eb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">In Solo mode only one timeline is active at one time, Multiple mode has no restrictions on the amount of timelines active <br /></td></tr>
+<tr class="memdesc:aaf041e22033651f357bcb0c3bb08eb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">In Solo mode the system will try to keep only one timeline active at one time, Multiple mode (Default) has no restrictions on the amount of timelines active <br /></td></tr>
 <tr class="separator:aaf041e22033651f357bcb0c3bb08eb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -122,26 +121,20 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTimeSmooth</b> (TimelineAsset timelineAsset, float targetTime, float duration, AnimationCurve curve=null, bool pauseOnEnd=false)</td></tr>
 <tr class="memdesc:a7ce00473aa763c8cfbf966cba32e3410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a target time for a timeline, which will be reached over X seconds. You can use values higher and lower than the current time to move time back and forward. You can pass in an AnimationCurve to change ease in and out. Do not call this every frame, it should be treated as a one-shot call. <br /></td></tr>
 <tr class="separator:a7ce00473aa763c8cfbf966cba32e3410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a34ae3c65d39594750ceff642317a06c1"><td class="memItemLeft" align="right" valign="top"><a id="a34ae3c65d39594750ceff642317a06c1" name="a34ae3c65d39594750ceff642317a06c1"></a>
-List&lt; TimelineAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timelineAssets</b> = new List&lt;TimelineAsset&gt;()</td></tr>
-<tr class="memdesc:a34ae3c65d39594750ceff642317a06c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default behaviour allows any number of timelines active at any time <br /></td></tr>
-<tr class="separator:a34ae3c65d39594750ceff642317a06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62049cdd1edd9b4f90032f90f451de83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_component.html#a62049cdd1edd9b4f90032f90f451de83">RebindTrack</a> (TimelineAsset timelineAsset, string trackName, UnityEngine.Object binding)</td></tr>
+<tr class="memdesc:a62049cdd1edd9b4f90032f90f451de83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows you to rebind your timeline tracks at runtime, these changes will not show or be recorded in the PlayableDirector. Be careful with this, it is possible to bind unsupported components. Animation track bound to Audio Source for example.  <a href="class_simple_1_1_timeline_1_1_timeline_component.html#a62049cdd1edd9b4f90032f90f451de83">More...</a><br /></td></tr>
+<tr class="separator:a62049cdd1edd9b4f90032f90f451de83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab3c601b3eca0eb7564a2e06078d5e4f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_component.html#ab3c601b3eca0eb7564a2e06078d5e4f0">AddToMaps</a> (<a class="el" href="class_simple_1_1_timeline_1_1_binding_data.html">BindingData</a> bindingData)</td></tr>
-<tr class="separator:ab3c601b3eca0eb7564a2e06078d5e4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e8b5fdca5585f34e6db77d9b8330976"><td class="memItemLeft" align="right" valign="top"><a id="a5e8b5fdca5585f34e6db77d9b8330976" name="a5e8b5fdca5585f34e6db77d9b8330976"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class="el" href="class_simple_1_1_timeline_1_1_binding_data.html">BindingData</a> bindingData, float targetWeight, float fadeTime=10f, float startTime=-1, int? loopPlayback=null)</td></tr>
 <tr class="memdesc:a5e8b5fdca5585f34e6db77d9b8330976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback ///. <br /></td></tr>
 <tr class="separator:a5e8b5fdca5585f34e6db77d9b8330976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab437bb34c56605e2280808bd714e9a81"><td class="memItemLeft" align="right" valign="top"><a id="ab437bb34c56605e2280808bd714e9a81" name="ab437bb34c56605e2280808bd714e9a81"></a>
-IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>AnimatorControllerFix</b> ()</td></tr>
-<tr class="memdesc:ab437bb34c56605e2280808bd714e9a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Briefly plays each timeline IF it has an AnimatorControllerPlayable connected to fix a visual bug where no animation is seen <br /></td></tr>
-<tr class="separator:ab437bb34c56605e2280808bd714e9a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0cc57a9b25912f4bdc2c311cda0a68"><td class="memItemLeft" align="right" valign="top"><a id="a6d0cc57a9b25912f4bdc2c311cda0a68" name="a6d0cc57a9b25912f4bdc2c311cda0a68"></a>
+List&lt; TrackAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEmptyTracks</b> (List&lt; TrackAsset &gt; tracks)</td></tr>
+<tr class="memdesc:a6d0cc57a9b25912f4bdc2c311cda0a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bulk bugfix, affects all AnimationBalancers and runs once in the lifetime of <a class="el" href="class_simple_1_1_timeline_1_1_timeline_mixer.html">TimelineMixer</a> Briefly plays each timeline at the start of lifetime IF it has an AnimatorControllerPlayable connected to fix a visual bug where no animation is seen <br /></td></tr>
+<tr class="separator:a6d0cc57a9b25912f4bdc2c311cda0a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -151,8 +144,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpGraph</b> ()</td
 <tr class="separator:a55ea659eb2f4a8474f4cfea3325257b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab3c601b3eca0eb7564a2e06078d5e4f0" name="ab3c601b3eca0eb7564a2e06078d5e4f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3c601b3eca0eb7564a2e06078d5e4f0">&#9670;&nbsp;</a></span>AddToMaps()</h2>
+<a id="a62049cdd1edd9b4f90032f90f451de83" name="a62049cdd1edd9b4f90032f90f451de83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62049cdd1edd9b4f90032f90f451de83">&#9670;&nbsp;</a></span>RebindTrack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,24 +154,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpGraph</b> ()</td
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Simple.Timeline.TimelineComponent.AddToMaps </td>
+          <td class="memname">void Simple.Timeline.TimelineComponent.RebindTrack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_simple_1_1_timeline_1_1_binding_data.html">BindingData</a>&#160;</td>
-          <td class="paramname"><em>bindingData</em></td><td>)</td>
+          <td class="paramtype">TimelineAsset&#160;</td>
+          <td class="paramname"><em>timelineAsset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>trackName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnityEngine.Object&#160;</td>
+          <td class="paramname"><em>binding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Allows you to rebind your timeline tracks at runtime, these changes will not show or be recorded in the PlayableDirector. Be careful with this, it is possible to bind unsupported components. Animation track bound to Audio Source for example. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bindingData</td><td></td></tr>
+    <tr><td class="paramname">timelineAsset</td><td></td></tr>
+    <tr><td class="paramname">bindings</td><td></td></tr>
   </table>
   </dd>
 </dl>
