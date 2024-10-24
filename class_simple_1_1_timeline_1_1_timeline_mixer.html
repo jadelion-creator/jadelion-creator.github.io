@@ -124,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9883fedb55b32bb70a8f0479729ccc98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a9883fedb55b32bb70a8f0479729ccc98">FadeOut</a> (TimelineAsset timelineAsset, float fadeTime=1f)</td></tr>
 <tr class="memdesc:a9883fedb55b32bb70a8f0479729ccc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fades out a <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a> matching the TimelineAsset passed in  <a href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a9883fedb55b32bb70a8f0479729ccc98">More...</a><br /></td></tr>
 <tr class="separator:a9883fedb55b32bb70a8f0479729ccc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad575e9c5613f7d9a3b330b5575d85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a8ad575e9c5613f7d9a3b330b5575d85a">Crossfade</a> (TimelineAsset fadeInAsset, TimelineAsset fadeOutAsset, float fadeTime=1f, float startTime=-1f)</td></tr>
-<tr class="memdesc:a8ad575e9c5613f7d9a3b330b5575d85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fades in one <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a> and fades out another <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a> at the same rate  <a href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a8ad575e9c5613f7d9a3b330b5575d85a">More...</a><br /></td></tr>
-<tr class="separator:a8ad575e9c5613f7d9a3b330b5575d85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725c133151b4fcc14d6bb00723584421"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a725c133151b4fcc14d6bb00723584421">Crossfade</a> (TimelineAsset fadeInAsset, TimelineAsset fadeOutAsset=null, float fadeTime=1f, float startTime=-1f)</td></tr>
+<tr class="memdesc:a725c133151b4fcc14d6bb00723584421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fades in one <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a> and fades out another <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a> at the same rate  <a href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a725c133151b4fcc14d6bb00723584421">More...</a><br /></td></tr>
+<tr class="separator:a725c133151b4fcc14d6bb00723584421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cbb5c374ed9c112ca47034fa4312c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a3cbb5c374ed9c112ca47034fa4312c4c">FadeTo</a> (TimelineAsset timelineAsset, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null, float easeOut=-1)</td></tr>
 <tr class="memdesc:a3cbb5c374ed9c112ca47034fa4312c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows more control than other playback methods, can fade out or in depending on parameter values, and also partially fade in a <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a>, does a search for the TimelineAsset from the name passed in, and calls the <a class="el" href="namespace_simple_1_1_timeline.html">Timeline</a> as key version of the method  <a href="class_simple_1_1_timeline_1_1_timeline_mixer.html#a3cbb5c374ed9c112ca47034fa4312c4c">More...</a><br /></td></tr>
 <tr class="separator:a3cbb5c374ed9c112ca47034fa4312c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,10 +174,6 @@ Additional Inherited Members</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class="el" href="class_simple_1_1_timeline_1_1_binding_data.html">BindingData</a> bindingData, float targetWeight, float fadeTime=10f, float startTime=-1, int? loopPlayback=null)</td></tr>
 <tr class="memdesc:a5e8b5fdca5585f34e6db77d9b8330976 inherit pro_methods_class_simple_1_1_timeline_1_1_timeline_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback ///. <br /></td></tr>
 <tr class="separator:a5e8b5fdca5585f34e6db77d9b8330976 inherit pro_methods_class_simple_1_1_timeline_1_1_timeline_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d0cc57a9b25912f4bdc2c311cda0a68 inherit pro_methods_class_simple_1_1_timeline_1_1_timeline_component"><td class="memItemLeft" align="right" valign="top"><a id="a6d0cc57a9b25912f4bdc2c311cda0a68" name="a6d0cc57a9b25912f4bdc2c311cda0a68"></a>
-List&lt; TrackAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEmptyTracks</b> (List&lt; TrackAsset &gt; tracks)</td></tr>
-<tr class="memdesc:a6d0cc57a9b25912f4bdc2c311cda0a68 inherit pro_methods_class_simple_1_1_timeline_1_1_timeline_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bulk bugfix, affects all AnimationBalancers and runs once in the lifetime of <a class="el" href="class_simple_1_1_timeline_1_1_timeline_mixer.html">TimelineMixer</a> Briefly plays each timeline at the start of lifetime IF it has an AnimatorControllerPlayable connected to fix a visual bug where no animation is seen <br /></td></tr>
-<tr class="separator:a6d0cc57a9b25912f4bdc2c311cda0a68 inherit pro_methods_class_simple_1_1_timeline_1_1_timeline_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae05dcad1403caef7c10e7f4ce17d5cd3" name="ae05dcad1403caef7c10e7f4ce17d5cd3"></a>
@@ -274,8 +270,8 @@ List&lt; TrackAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>R
 
 </div>
 </div>
-<a id="a8ad575e9c5613f7d9a3b330b5575d85a" name="a8ad575e9c5613f7d9a3b330b5575d85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad575e9c5613f7d9a3b330b5575d85a">&#9670;&nbsp;</a></span>Crossfade() <span class="overload">[2/2]</span></h2>
+<a id="a725c133151b4fcc14d6bb00723584421" name="a725c133151b4fcc14d6bb00723584421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725c133151b4fcc14d6bb00723584421">&#9670;&nbsp;</a></span>Crossfade() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +289,7 @@ List&lt; TrackAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>R
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TimelineAsset&#160;</td>
-          <td class="paramname"><em>fadeOutAsset</em>, </td>
+          <td class="paramname"><em>fadeOutAsset</em> = <code>null</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
