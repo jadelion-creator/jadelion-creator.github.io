@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rebinding_20tracks_20at_20runtime_0',['Rebinding tracks at runtime',['../md_doc_pages__4__rebinding_tracks.html',1,'']]]
+  ['getting_20started_0',['Getting Started',['../md_doc_pages__1__getting_started.html',1,'']]]
 ];

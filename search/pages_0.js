@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['found_20a_20bug_3f_20feature_20request_3f_0',['Found a bug? Feature request?',['../md_doc_pages__5__bugs.html',1,'']]]
+  ['animator_20controller_20and_20timelinemixer_0',['Animator Controller and TimelineMixer',['../md_doc_pages__5__animator_controller.html',1,'']]]
 ];

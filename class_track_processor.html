@@ -103,9 +103,9 @@ Inheritance diagram for TrackProcessor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad8d3bbc68a3d9d9c163dbda710e7f000"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_track_processor.html#ad8d3bbc68a3d9d9c163dbda710e7f000">DisconnectTrack</a> (<a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex)</td></tr>
-<tr class="memdesc:ad8d3bbc68a3d9d9c163dbda710e7f000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanly disconnects tracks from their mixers and destroys any intermediary Playables. This is used when rebinding a timeline track at runtime.  <a href="class_track_processor.html#ad8d3bbc68a3d9d9c163dbda710e7f000">More...</a><br /></td></tr>
-<tr class="separator:ad8d3bbc68a3d9d9c163dbda710e7f000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2737a270f35e5a60fbc4df59e3609679"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_track_processor.html#a2737a270f35e5a60fbc4df59e3609679">DisconnectTrack</a> (<a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_simple_1_1_timeline_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
+<tr class="memdesc:a2737a270f35e5a60fbc4df59e3609679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanly disconnects tracks from their mixers and destroys any intermediary Playables. This is used when rebinding a timeline track at runtime.  <a href="class_track_processor.html#a2737a270f35e5a60fbc4df59e3609679">More...</a><br /></td></tr>
+<tr class="separator:a2737a270f35e5a60fbc4df59e3609679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -175,8 +175,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8d3bbc68a3d9d9c163dbda710e7f000" name="ad8d3bbc68a3d9d9c163dbda710e7f000"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8d3bbc68a3d9d9c163dbda710e7f000">&#9670;&nbsp;</a></span>DisconnectTrack()</h2>
+<a id="a2737a270f35e5a60fbc4df59e3609679" name="a2737a270f35e5a60fbc4df59e3609679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2737a270f35e5a60fbc4df59e3609679">&#9670;&nbsp;</a></span>DisconnectTrack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +194,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>trackIndex</em>&#160;</td>
+          <td class="paramname"><em>trackIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref <a class="el" href="class_simple_1_1_timeline_1_1_playable_connection_info.html">PlayableConnectionInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,7 +228,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="interface_simple_1_1_timeline_1_1_i_track_processor.html">Simple.Timeline.ITrackProcessor</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_audio_track_processor.html#a9a976d95d97b4373419ec88dbb048097">AudioTrackProcessor</a>.</p>
+<p>Reimplemented in <a class="el" href="class_audio_track_processor.html#a4fb62ab3edacfb09de19cbceb62b4189">AudioTrackProcessor</a>.</p>
 
 </div>
 </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Timeline Mixer Documentation: Member List</title>
+<title>Timeline Mixer Documentation: Animator Controller and TimelineMixer</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_audio_track_processor.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_doc_pages__5__animator_controller.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,16 +84,26 @@ $(document).ready(function(){initNavTree('class_audio_track_processor.html','');
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">AudioTrackProcessor Member List</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Animator Controller and TimelineMixer </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_audio_track_processor.html">AudioTrackProcessor</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_track_processor.html#a4378f52bb8fe8c572aa01828c031d79a">ConnectPlayable</a>(PlayableNode mixerNode, PlayableNode timelineNode, int trackIndex, ref PlayableConnectionInfo info)</td><td class="entry"><a class="el" href="class_track_processor.html">TrackProcessor</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_audio_track_processor.html#a4fb62ab3edacfb09de19cbceb62b4189">DisconnectTrack</a>(PlayableNode timelineNode, int trackIndex, ref PlayableConnectionInfo info)</td><td class="entry"><a class="el" href="class_audio_track_processor.html">AudioTrackProcessor</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><blockquote class="doxtable">
+<p >&zwj;TimelineMixer removes AnimatorController references from Animator components if the Animator is targeted by an animation track, and creates a new instance internally to enable mixing between timelines and the AnimatorController. </p>
+</blockquote>
+<p>TimelineMixer can be used alongside AnimatorControllers easily without any modification to your workflow. Simply create your controller and assign it to an Animator component.</p>
+<p >If a track on a Timeline targets the same Animator, TimelineMixer will consume the AnimatorController and remove the reference from the Animators object field.</p>
+<p >Even with an empty controller field you will still be able to inspect the controller through the Animator window, and all method calls will still work, such as SetBool, SetFloat etc...</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+But... Why?</h1>
+<p >TimelineMixer needs to play nice with Animator Controllers, and it can't do that if they're not on the same PlayableGraph.</p>
+<p >By bringing the AnimatorController into TimelineMixers PlayableGraph, we can smoothly transition from the AnimatorController to a Timeline without any animation artifacts.</p>
+<p >The Animators object reference is removed to stop any animation conflicts.</p>
+<blockquote class="doxtable">
+<p >&zwj;If TimelineMixer is destroyed, it will attempt to return the AnimatorController to the component. </p>
+</blockquote>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
