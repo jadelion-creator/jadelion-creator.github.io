@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interface_simple_1_1_timeline_1_1_i_track_processor.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interface_timeline_mixer_1_1_i_track_processor.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="19.12,-113 19.12,-132.25 102.62,-132.25 102.62,-113 19.12,-113"/>
 <text text-anchor="middle" x="60.88" y="-118.75" font-family="Helvetica,sans-Serif" font-size="10.00">ITrackProcessor</text>
 </a>

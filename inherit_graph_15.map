@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_simple_1_1_timeline_1_1_play_state.html" title=" " alt="" coords="5,5,171,32"/>
-<area shape="rect" id="node2" href="$class_simple_1_1_timeline_1_1_fade_to.html" title="Part of a simple state machine that TimelineMixerPlayable makes use of, updates the weights of tracks..." alt="" coords="219,5,371,32"/>
+<area shape="rect" id="node1" href="$class_timeline_mixer_1_1_play_state.html" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_fade_to.html" title="Part of a simple state machine that TimelineMixerPlayable makes use of, updates the weights of tracks..." alt="" coords="208,5,349,32"/>
 </map>

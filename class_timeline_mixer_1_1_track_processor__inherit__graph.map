@@ -1,0 +1,8 @@
+<map id="TimelineMixer.TrackProcessor" name="TimelineMixer.TrackProcessor">
+<area shape="rect" id="node1" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="165,113,349,140"/>
+<area shape="rect" id="node3" href="$class_timeline_mixer_1_1_animation_track_processor.html" title="Processes animation tracks and connects them to the correct mixer on the playable graph...." alt="" coords="397,5,580,47"/>
+<area shape="rect" id="node4" href="$class_timeline_mixer_1_1_audio_track_processor.html" title="Processes audio tracks and connects them to the correct mixer on the playable graph...." alt="" coords="408,72,569,114"/>
+<area shape="rect" id="node5" href="$class_timeline_mixer_1_1_marker_track_processor.html" title="This track processor will connect the marker track to the graph." alt="" coords="406,139,572,181"/>
+<area shape="rect" id="node6" href="$class_timeline_mixer_1_1_signal_track_processor.html" title="Setup outputs for Signal tracks" alt="" coords="407,205,570,247"/>
+<area shape="rect" id="node2" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="5,113,117,140"/>
+</map>

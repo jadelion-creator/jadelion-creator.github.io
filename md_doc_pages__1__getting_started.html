@@ -89,15 +89,23 @@ $(document).ready(function(){initNavTree('md_doc_pages__1__getting_started.html'
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >To get started, create an empty GameObject. With it selected, in the Inspector window, click “Add Component.”</p>
-<p >Search for the Timeline Mixer component and add it to your GameObject.</p>
-<p >You will notice a Playable Director has been automatically added to the GameObject as well. This is required for setup and cannot be removed.</p>
-<p >The Object field on the Director should not be filled manually. Instead, on the Timeline Mixer component, find the “Timelines” list and set the number of Timeline assets. Add your Timeline Assets to the fields in the Timelines list. To edit your timeline, press the “Edit” button next to it on the Timeline Mixer component.</p>
-<p >The selected Timeline will be placed in the Playable Director, and the Timeline Window will open. Any changes to bindings or exposed references will be saved in the Playable Director and used to set up Timeline Mixer.</p>
+<p >Search for TimelineMixerComponent and add it to your GameObject.</p>
+<div class="image">
+<img src="AddComponent.png" alt=""/>
+</div>
+    <p >You will notice a Playable Director has been automatically added to the GameObject as well. This is required for setup and cannot be removed.</p>
+<p >On the Timeline Mixer component, find the Timeline Assets list and set the number of Timeline assets with the Size field.</p>
+<p >At the top of the component you can set either Multiple or Solo modes. Multiple mode allows any number of timelines to be active, and Solo mode will allow only one at a time.</p>
+<div class="image">
+<img src="Modes.png" alt=""/>
+</div>
+    <p >Add your Timeline Assets to the fields in the Timelines list. To edit your timeline, press the “Edit” button next to it on the Timeline Mixer component.</p>
+<p >The selected Timeline will be placed in the Playable Director for editing, and the Timeline Window will open. Any changes to bindings or exposed references will be saved in the Playable Director and used to set up Timeline Mixer.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Playback</h1>
-<p >In your script, add the namespace: <code>using <a class="el" href="namespace_simple_1_1_timeline.html">Simple.Timeline</a>;</code></p>
+Playback at Runtime</h1>
+<p >In your script, add the namespace: <code>using <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a>;</code></p>
 <p >Get a reference to the Timeline Mixer component and use the playback methods:</p>
-<div class="fragment"><div class="line">TimelineMixer timelineMixer = GetComponent&lt;TimelineMixer&gt;();</div>
+<div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixer&gt;();</div>
 <div class="line"> </div>
 <div class="line">timelineMixer.Play(TimelineAsset timelineAsset, <span class="keywordtype">float</span> startTime = -1f, <span class="keywordtype">int</span>? loopPlayback = <span class="keyword">null</span>);</div>
 <div class="line"> </div>
@@ -110,7 +118,7 @@ Playback</h1>
 <div class="line">timelineMixer.FadeTo(TimelineAsset timelineAsset, <span class="keywordtype">float</span> targetWeight, <span class="keywordtype">float</span> fadeTime = 1f, <span class="keywordtype">float</span> startTime = -1, <span class="keywordtype">int</span>? loopMode = <span class="keyword">null</span>, <span class="keywordtype">float</span> easeOut = -1);</div>
 </div><!-- fragment --><ul>
 <li><code>timelineAsset</code>: The Unity Timeline to play.</li>
-<li><code>startTime</code>: The timeline time to start playback from.</li>
+<li><code>startTime</code>: The timeline time to start playback from. If set to -1 the parameter is ignored.</li>
 <li><code>fadeTime</code>: The transition time in seconds.</li>
 <li><code>targetWeight</code>: Unique to the FadeTo method, float 0 - 1, indicates the target strength of the timeline. Partial fades.</li>
 <li><code>loopPlayback</code>: Can be null, or equal to <code>LoopMode.loop</code> or <code>LoopMode.Endless</code>.</li>

@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Timeline Mixer Documentation", "index.html", [
     [ "Getting Started", "md_doc_pages__1__getting_started.html", [
-      [ "Playback", "md_doc_pages__1__getting_started.html#autotoc_md1", null ],
+      [ "Playback at Runtime", "md_doc_pages__1__getting_started.html#autotoc_md1", null ],
       [ "Fast Forward / Rewind", "md_doc_pages__1__getting_started.html#autotoc_md2", null ]
     ] ],
     [ "Timeline Mixer Window", "md_doc_pages__2__timeline_mixer_window.html", null ],
@@ -35,7 +35,7 @@ var NAVTREE =
       [ "The PlayableNode class", "md_doc_pages__3__track_processors.html#autotoc_md8", null ]
     ] ],
     [ "Rebinding tracks at runtime", "md_doc_pages__4__rebinding_tracks.html", null ],
-    [ "Animator Controller and TimelineMixer", "md_doc_pages__5__animator_controller.html", [
+    [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__5__animator_controller.html", [
       [ "But... Why?", "md_doc_pages__5__animator_controller.html#autotoc_md11", null ]
     ] ],
     [ "Found a bug? Feature request?", "md_doc_pages__6__bugs.html", null ],

@@ -90,7 +90,9 @@ $(document).ready(function(){initNavTree('md_doc_pages__4__rebinding_tracks.html
 <div class="contents">
 <div class="textblock"><p >Timeline Mixer allows you to change your track bindings at runtime by calling the <code>RebindTrack</code> method:</p>
 <div class="fragment"><div class="line">timelineMixer.RebindTrack(timelineAsset, <span class="stringliteral">&quot;TrackName&quot;</span>, newBinding);</div>
-</div><!-- fragment --><p >This will disconnect the track from its current mixer or output, create a new output or mixer if needed through the <code><a class="el" href="class_track_processor.html" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ...">TrackProcessor</a></code>, and connect them together.</p>
+<div class="line"> </div>
+<div class="line">timelineMixer.RebindTrack(<span class="stringliteral">&quot;timelineName&quot;</span>, <span class="stringliteral">&quot;TrackName&quot;</span>, newBinding);</div>
+</div><!-- fragment --><p >This will disconnect the track from its current mixer or output, create a new output or mixer if needed through the <code>TrackProcessor</code>, and connect them together.</p>
 <p >The Playable Director will not store any information about these runtime rebinds and remains unchanged. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

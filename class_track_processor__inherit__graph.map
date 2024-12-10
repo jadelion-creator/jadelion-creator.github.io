@@ -4,5 +4,5 @@
 <area shape="rect" id="node4" href="$class_audio_track_processor.html" title="Processes audio tracks and connects them to the correct mixer on the playable graph...." alt="" coords="332,56,471,83"/>
 <area shape="rect" id="node5" href="$class_marker_track_processor.html" title="This track processor will connect the marker track to the graph." alt="" coords="328,107,474,134"/>
 <area shape="rect" id="node6" href="$class_signal_track_processor.html" title="Setup outputs for Signal tracks" alt="" coords="330,157,472,184"/>
-<area shape="rect" id="node2" href="$interface_simple_1_1_timeline_1_1_i_track_processor.html" title=" " alt="" coords="5,81,117,108"/>
+<area shape="rect" id="node2" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="5,81,117,108"/>
 </map>

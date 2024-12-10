@@ -102,17 +102,17 @@ Inheritance diagram for AudioTrackProcessor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4fb62ab3edacfb09de19cbceb62b4189"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_track_processor.html#a4fb62ab3edacfb09de19cbceb62b4189">DisconnectTrack</a> (<a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_simple_1_1_timeline_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
-<tr class="memdesc:a4fb62ab3edacfb09de19cbceb62b4189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanly disconnects tracks from their mixers and destroys any intermediary Playables. This is used when rebinding a timeline track at runtime.  <a href="class_audio_track_processor.html#a4fb62ab3edacfb09de19cbceb62b4189">More...</a><br /></td></tr>
+<tr class="memitem:a4fb62ab3edacfb09de19cbceb62b4189"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_track_processor.html#a4fb62ab3edacfb09de19cbceb62b4189">DisconnectTrack</a> (<a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_timeline_mixer_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
+<tr class="memdesc:a4fb62ab3edacfb09de19cbceb62b4189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to cleanly disconnect tracks from their mixers and destroys any intermediary Playables. If you have added a lot of mixers or other playables between the timeline and output destroy them here. This is used when rebinding a timeline track at runtime.  <a href="class_audio_track_processor.html#a4fb62ab3edacfb09de19cbceb62b4189">More...</a><br /></td></tr>
 <tr class="separator:a4fb62ab3edacfb09de19cbceb62b4189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2737a270f35e5a60fbc4df59e3609679"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_track_processor.html#a2737a270f35e5a60fbc4df59e3609679">DisconnectTrack</a> (<a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_simple_1_1_timeline_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
-<tr class="memdesc:a2737a270f35e5a60fbc4df59e3609679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanly disconnects tracks from their mixers and destroys any intermediary Playables. This is used when rebinding a timeline track at runtime.  <a href="class_track_processor.html#a2737a270f35e5a60fbc4df59e3609679">More...</a><br /></td></tr>
+<tr class="memitem:a2737a270f35e5a60fbc4df59e3609679"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_track_processor.html#a2737a270f35e5a60fbc4df59e3609679">DisconnectTrack</a> (<a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_timeline_mixer_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
+<tr class="memdesc:a2737a270f35e5a60fbc4df59e3609679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to cleanly disconnect tracks from their mixers and destroys any intermediary Playables. If you have added a lot of mixers or other playables between the timeline and output destroy them here. This is used when rebinding a timeline track at runtime.  <a href="class_track_processor.html#a2737a270f35e5a60fbc4df59e3609679">More...</a><br /></td></tr>
 <tr class="separator:a2737a270f35e5a60fbc4df59e3609679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_track_processor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_track_processor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_track_processor.html">TrackProcessor</a></td></tr>
-<tr class="memitem:a4378f52bb8fe8c572aa01828c031d79a inherit pro_methods_class_track_processor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_track_processor.html#a4378f52bb8fe8c572aa01828c031d79a">ConnectPlayable</a> (<a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a> mixerNode, <a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_simple_1_1_timeline_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
+<tr class="memitem:a4378f52bb8fe8c572aa01828c031d79a inherit pro_methods_class_track_processor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_track_processor.html#a4378f52bb8fe8c572aa01828c031d79a">ConnectPlayable</a> (<a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a> mixerNode, <a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a> timelineNode, int trackIndex, ref <a class="el" href="class_timeline_mixer_1_1_playable_connection_info.html">PlayableConnectionInfo</a> info)</td></tr>
 <tr class="memdesc:a4378f52bb8fe8c572aa01828c031d79a inherit pro_methods_class_track_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects the Timeline Playable to a mixer or passthrough and stores information about connections in the PlayableConnectionInfo  <a href="class_track_processor.html#a4378f52bb8fe8c572aa01828c031d79a">More...</a><br /></td></tr>
 <tr class="separator:a4378f52bb8fe8c572aa01828c031d79a inherit pro_methods_class_track_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -131,7 +131,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">override void AudioTrackProcessor.DisconnectTrack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_simple_1_1_timeline_1_1_playable_node.html">PlayableNode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a>&#160;</td>
           <td class="paramname"><em>timelineNode</em>, </td>
         </tr>
         <tr>
@@ -143,7 +143,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ref <a class="el" href="class_simple_1_1_timeline_1_1_playable_connection_info.html">PlayableConnectionInfo</a>&#160;</td>
+          <td class="paramtype">ref <a class="el" href="class_timeline_mixer_1_1_playable_connection_info.html">PlayableConnectionInfo</a>&#160;</td>
           <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
@@ -159,7 +159,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Cleanly disconnects tracks from their mixers and destroys any intermediary Playables. This is used when rebinding a timeline track at runtime. </p>
+<p>Use this to cleanly disconnect tracks from their mixers and destroys any intermediary Playables. If you have added a lot of mixers or other playables between the timeline and output destroy them here. This is used when rebinding a timeline track at runtime. </p>
 <p >Specialized track processors may need to override this method if they involve multiple Playables between the timeline and the mixer. For example:</p><ul>
 <li>The audio track processor uses an extra AudioMixerPlayable to work around a bug in the Playables API that affects audio mixing. </li>
 </ul>

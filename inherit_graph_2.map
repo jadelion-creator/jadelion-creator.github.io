@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,105,40"/>
-<area shape="rect" id="node2" href="$class_simple_1_1_timeline_1_1_timeline_mixer_window.html" title=" " alt="" coords="153,5,306,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,116,40"/>
+<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_timeline_mixer_base.html" title="This component is not intended to be used directly, TimelineMixerComponent inherits this,..." alt="" coords="164,13,367,40"/>
+<area shape="rect" id="node3" href="$class_timeline_mixer_1_1_timeline_mixer_component.html" title=" " alt="" coords="415,5,587,47"/>
 </map>

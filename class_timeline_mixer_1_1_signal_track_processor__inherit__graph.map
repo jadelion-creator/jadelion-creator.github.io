@@ -1,0 +1,5 @@
+<map id="TimelineMixer.SignalTrackProcessor" name="TimelineMixer.SignalTrackProcessor">
+<area shape="rect" id="node1" title="Setup outputs for Signal tracks" alt="" coords="5,155,169,197"/>
+<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_track_processor.html" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="33,80,141,107"/>
+<area shape="rect" id="node3" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="31,5,143,32"/>
+</map>

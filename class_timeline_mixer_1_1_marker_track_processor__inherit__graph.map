@@ -1,0 +1,5 @@
+<map id="TimelineMixer.MarkerTrackProcessor" name="TimelineMixer.MarkerTrackProcessor">
+<area shape="rect" id="node1" title="This track processor will connect the marker track to the graph." alt="" coords="5,155,172,197"/>
+<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_track_processor.html" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="35,80,142,107"/>
+<area shape="rect" id="node3" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="33,5,144,32"/>
+</map>

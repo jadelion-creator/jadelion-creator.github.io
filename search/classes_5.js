@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loopmode_0',['LoopMode',['../class_simple_1_1_timeline_1_1_loop_mode.html',1,'Simple::Timeline']]]
+  ['loopmode_0',['LoopMode',['../class_timeline_mixer_1_1_loop_mode.html',1,'TimelineMixer']]]
 ];

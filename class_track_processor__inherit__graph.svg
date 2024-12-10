@@ -80,7 +80,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interface_simple_1_1_timeline_1_1_i_track_processor.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interface_timeline_mixer_1_1_i_track_processor.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="0,-57.5 0,-76.75 83.5,-76.75 83.5,-57.5 0,-57.5"/>
 <text text-anchor="middle" x="41.75" y="-63.25" font-family="Helvetica,sans-Serif" font-size="10.00">ITrackProcessor</text>
 </a>
