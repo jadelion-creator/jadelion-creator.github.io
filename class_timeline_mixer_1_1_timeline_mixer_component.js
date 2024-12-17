@@ -1,5 +1,6 @@
 var class_timeline_mixer_1_1_timeline_mixer_component =
 [
+    [ "AddTimeline", "class_timeline_mixer_1_1_timeline_mixer_component.html#a05b04a63d7a5ab1d9bbbd9c50c09ca12", null ],
     [ "CreateBindingGroups", "class_timeline_mixer_1_1_timeline_mixer_component.html#a623bc182865f7b7471b3730633c267cd", null ],
     [ "Crossfade", "class_timeline_mixer_1_1_timeline_mixer_component.html#a9592fd73e72bbff90269bcb1219ec3f1", null ],
     [ "Crossfade", "class_timeline_mixer_1_1_timeline_mixer_component.html#aaadc3e0e1ee578ce3f7492d41991feb2", null ],

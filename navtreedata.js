@@ -35,10 +35,11 @@ var NAVTREE =
       [ "The PlayableNode class", "md_doc_pages__3__track_processors.html#autotoc_md8", null ]
     ] ],
     [ "Rebinding tracks at runtime", "md_doc_pages__4__rebinding_tracks.html", null ],
-    [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__5__animator_controller.html", [
-      [ "But... Why?", "md_doc_pages__5__animator_controller.html#autotoc_md11", null ]
+    [ "Adding Timeline Assets at Runtime", "md_doc_pages__5__add_timelines_at_runtime.html", null ],
+    [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__6__animator_controller.html", [
+      [ "But... Why?", "md_doc_pages__6__animator_controller.html#autotoc_md12", null ]
     ] ],
-    [ "Found a bug? Feature request?", "md_doc_pages__6__bugs.html", null ],
+    [ "Found a bug? Feature request?", "md_doc_pages__7__bugs.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

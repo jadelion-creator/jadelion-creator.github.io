@@ -100,6 +100,9 @@ Inheritance diagram for TimelineMixer.TimelineMixerComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a05b04a63d7a5ab1d9bbbd9c50c09ca12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a05b04a63d7a5ab1d9bbbd9c50c09ca12">AddTimeline</a> (TimelineAsset timelineAsset)</td></tr>
+<tr class="memdesc:a05b04a63d7a5ab1d9bbbd9c50c09ca12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timelines can be added to the system at runtime by passing in a timeline asset, but they will have no bindings to start with. You will need to use the RebindTrack method to set your bindings. I haven't included a way to pass a list of bindings, as this could VERY easily lead to mistakes and incorrect bindings. Nobody wants an animation track bound to an audio source.  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a05b04a63d7a5ab1d9bbbd9c50c09ca12">More...</a><br /></td></tr>
+<tr class="separator:a05b04a63d7a5ab1d9bbbd9c50c09ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a047ab354d8ebdb0cf4b3c21c9789da89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a047ab354d8ebdb0cf4b3c21c9789da89">Play</a> (string timelineAssetName, float startTime=-1f, int? loopPlayback=null)</td></tr>
 <tr class="memdesc:a047ab354d8ebdb0cf4b3c21c9789da89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a Timeline from the string name, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a047ab354d8ebdb0cf4b3c21c9789da89">More...</a><br /></td></tr>
 <tr class="separator:a047ab354d8ebdb0cf4b3c21c9789da89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +179,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class=
 <tr class="separator:adab9ca4d0dddf7e07e62403d0f84ac19 inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a05b04a63d7a5ab1d9bbbd9c50c09ca12" name="a05b04a63d7a5ab1d9bbbd9c50c09ca12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b04a63d7a5ab1d9bbbd9c50c09ca12">&#9670;&nbsp;</a></span>AddTimeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimelineMixer.TimelineMixerComponent.AddTimeline </td>
+          <td>(</td>
+          <td class="paramtype">TimelineAsset&#160;</td>
+          <td class="paramname"><em>timelineAsset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timelines can be added to the system at runtime by passing in a timeline asset, but they will have no bindings to start with. You will need to use the RebindTrack method to set your bindings. I haven't included a way to pass a list of bindings, as this could VERY easily lead to mistakes and incorrect bindings. Nobody wants an animation track bound to an audio source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timelineAsset</td><td>The timeline asset to add to the system.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a623bc182865f7b7471b3730633c267cd" name="a623bc182865f7b7471b3730633c267cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a623bc182865f7b7471b3730633c267cd">&#9670;&nbsp;</a></span>CreateBindingGroups()</h2>
 
