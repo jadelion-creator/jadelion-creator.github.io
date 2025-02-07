@@ -39,7 +39,7 @@ var NAVTREE =
     [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__6__animator_controller.html", [
       [ "But... Why?", "md_doc_pages__6__animator_controller.html#autotoc_md12", null ]
     ] ],
-    [ "Found a bug? Feature request?", "md_doc_pages__7__bugs.html", null ],
+    [ "Found a Bug or Have a Feature Request?", "md_doc_pages__7__bugs.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

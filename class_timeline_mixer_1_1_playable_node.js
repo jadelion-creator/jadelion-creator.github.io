@@ -6,7 +6,6 @@ var class_timeline_mixer_1_1_playable_node =
     [ "GetInputWeight", "class_timeline_mixer_1_1_playable_node.html#aaa16fd5eb7895d7c75675d828ad195b6", null ],
     [ "GetListConnectedInputs", "class_timeline_mixer_1_1_playable_node.html#a6d42209ae10762f228fe1a6a0ad42d1c", null ],
     [ "GetOutputCount", "class_timeline_mixer_1_1_playable_node.html#ac3e11fde466def26464b32a57fb8ed27", null ],
-    [ "GetOutputPortIndex", "class_timeline_mixer_1_1_playable_node.html#a880f3fe797b6e385f553d6182aefa751", null ],
     [ "GetPlayable", "class_timeline_mixer_1_1_playable_node.html#a471e740edc4fb000ead42bafb2762dd7", null ],
     [ "GetTrackPort", "class_timeline_mixer_1_1_playable_node.html#ae0f1e129d263ee44e750c244f098ed58", null ],
     [ "IsPortConnected", "class_timeline_mixer_1_1_playable_node.html#aef7fce29347fab903223c0b2b7c3711c", null ],

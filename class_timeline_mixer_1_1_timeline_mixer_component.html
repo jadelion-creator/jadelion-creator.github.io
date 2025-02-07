@@ -100,12 +100,19 @@ Inheritance diagram for TimelineMixer.TimelineMixerComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac45bf7c68eccd4b240b89d176c958af7"><td class="memItemLeft" align="right" valign="top"><a id="ac45bf7c68eccd4b240b89d176c958af7" name="ac45bf7c68eccd4b240b89d176c958af7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:ac45bf7c68eccd4b240b89d176c958af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows you to initialize timelinemixercomponent at a time of your choosing if autoinitialize is false. Playback methods will not work if uninitialized. <br /></td></tr>
+<tr class="separator:ac45bf7c68eccd4b240b89d176c958af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4108ba6546a9a6f7bf50c8b8a9380c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a4e4108ba6546a9a6f7bf50c8b8a9380c">SetGraph</a> (PlayableGraph playableGraph)</td></tr>
+<tr class="memdesc:a4e4108ba6546a9a6f7bf50c8b8a9380c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playable graph to use can be set before Initialize is called, useful if you need <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> to use a specific graph to help integrate it with your custom tool. Do not use a playable directors graph, or any graph that you don't manage the lifecycle for.  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a4e4108ba6546a9a6f7bf50c8b8a9380c">More...</a><br /></td></tr>
+<tr class="separator:a4e4108ba6546a9a6f7bf50c8b8a9380c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b04a63d7a5ab1d9bbbd9c50c09ca12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a05b04a63d7a5ab1d9bbbd9c50c09ca12">AddTimeline</a> (TimelineAsset timelineAsset)</td></tr>
 <tr class="memdesc:a05b04a63d7a5ab1d9bbbd9c50c09ca12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timelines can be added to the system at runtime by passing in a timeline asset, but they will have no bindings to start with. You will need to use the RebindTrack method to set your bindings. I haven't included a way to pass a list of bindings, as this could VERY easily lead to mistakes and incorrect bindings. Nobody wants an animation track bound to an audio source.  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a05b04a63d7a5ab1d9bbbd9c50c09ca12">More...</a><br /></td></tr>
 <tr class="separator:a05b04a63d7a5ab1d9bbbd9c50c09ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a047ab354d8ebdb0cf4b3c21c9789da89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a047ab354d8ebdb0cf4b3c21c9789da89">Play</a> (string timelineAssetName, float startTime=-1f, int? loopPlayback=null)</td></tr>
-<tr class="memdesc:a047ab354d8ebdb0cf4b3c21c9789da89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a Timeline from the string name, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a047ab354d8ebdb0cf4b3c21c9789da89">More...</a><br /></td></tr>
-<tr class="separator:a047ab354d8ebdb0cf4b3c21c9789da89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6e28f7abdbe16638e2600b443ffdad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a3d6e28f7abdbe16638e2600b443ffdad">Play</a> (string timelineAssetName, float startTime=-1f, int? loopMode=null)</td></tr>
+<tr class="memdesc:a3d6e28f7abdbe16638e2600b443ffdad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a Timeline from the string name, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a3d6e28f7abdbe16638e2600b443ffdad">More...</a><br /></td></tr>
+<tr class="separator:a3d6e28f7abdbe16638e2600b443ffdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45fab89a697c870148c8595586f24433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a45fab89a697c870148c8595586f24433">FadeIn</a> (string timelineAssetName, float fadeTime=1f, float startTime=-1f, int? loopMode=null)</td></tr>
 <tr class="memdesc:a45fab89a697c870148c8595586f24433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fades in a Timeline from the string name, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a45fab89a697c870148c8595586f24433">More...</a><br /></td></tr>
 <tr class="separator:a45fab89a697c870148c8595586f24433"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a547f696d0751eeb27074eadcd5b09d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#a547f696d0751eeb27074eadcd5b09d6b">FadeTo</a> (TimelineAsset timelineAsset, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null, float easeOut=-1)</td></tr>
 <tr class="memdesc:a547f696d0751eeb27074eadcd5b09d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows more control than other playback methods, can fade out or in depending on parameter values, and also partially fade in a Timeline, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#a547f696d0751eeb27074eadcd5b09d6b">More...</a><br /></td></tr>
 <tr class="separator:a547f696d0751eeb27074eadcd5b09d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72bdd8433706869f0b2685a58e92d1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html#ab72bdd8433706869f0b2685a58e92d1b">GetExternalConnectionAnimationNode</a> (Animator animator)</td></tr>
+<tr class="memdesc:ab72bdd8433706869f0b2685a58e92d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the AnimationMixer node that will allow you to connect your custom animation system or other animation related playables. This is the same AnimationMixer that the AnimatorControllerPlayable connects to. Weights on this mixer are not automatically managed, except for when the AnimatorControllerPlayable is connected. You will need to change weights as needed.  <a href="class_timeline_mixer_1_1_timeline_mixer_component.html#ab72bdd8433706869f0b2685a58e92d1b">More...</a><br /></td></tr>
+<tr class="separator:ab72bdd8433706869f0b2685a58e92d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_timeline_mixer_1_1_timeline_mixer_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html">TimelineMixer.TimelineMixerBase</a></td></tr>
 <tr class="memitem:a492e0aca5e87f4d144c29eac93a6c04f inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html#a492e0aca5e87f4d144c29eac93a6c04f">SetTimeUpdateMode</a> (DirectorUpdateMode mode)</td></tr>
 <tr class="memdesc:a492e0aca5e87f4d144c29eac93a6c04f inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the update mode of the Playable Graph to suit your requirements.  <a href="class_timeline_mixer_1_1_timeline_mixer_base.html#a492e0aca5e87f4d144c29eac93a6c04f">More...</a><br /></td></tr>
@@ -714,6 +724,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class=
 
 </div>
 </div>
+<a id="ab72bdd8433706869f0b2685a58e92d1b" name="ab72bdd8433706869f0b2685a58e92d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72bdd8433706869f0b2685a58e92d1b">&#9670;&nbsp;</a></span>GetExternalConnectionAnimationNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a> TimelineMixer.TimelineMixerComponent.GetExternalConnectionAnimationNode </td>
+          <td>(</td>
+          <td class="paramtype">Animator&#160;</td>
+          <td class="paramname"><em>animator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find the AnimationMixer node that will allow you to connect your custom animation system or other animation related playables. This is the same AnimationMixer that the AnimatorControllerPlayable connects to. Weights on this mixer are not automatically managed, except for when the AnimatorControllerPlayable is connected. You will need to change weights as needed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animator</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a47c560a4444111de5d94d5c06da5a0a2" name="a47c560a4444111de5d94d5c06da5a0a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47c560a4444111de5d94d5c06da5a0a2">&#9670;&nbsp;</a></span>GetTimelineWithName()</h2>
 
@@ -749,8 +794,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class=
 
 </div>
 </div>
-<a id="a047ab354d8ebdb0cf4b3c21c9789da89" name="a047ab354d8ebdb0cf4b3c21c9789da89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a047ab354d8ebdb0cf4b3c21c9789da89">&#9670;&nbsp;</a></span>Play() <span class="overload">[1/2]</span></h2>
+<a id="a3d6e28f7abdbe16638e2600b443ffdad" name="a3d6e28f7abdbe16638e2600b443ffdad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6e28f7abdbe16638e2600b443ffdad">&#9670;&nbsp;</a></span>Play() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -774,7 +819,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class=
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int?&#160;</td>
-          <td class="paramname"><em>loopPlayback</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>loopMode</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -794,7 +839,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class=
   <table class="params">
     <tr><td class="paramname">timelineAssetName</td><td>The name of the timeline to play</td></tr>
     <tr><td class="paramname">startTime</td><td>The time, relative to the timeline to start playing from. If left at the default value this parameter is ignored</td></tr>
-    <tr><td class="paramname">loopPlayback</td><td>Should the timeline loop? Takes a <a class="el" href="class_timeline_mixer_1_1_loop_mode.html" title="The purpose of this class is simply to make the LoopMode parameter more readable. You can alternative...">LoopMode</a> option</td></tr>
+    <tr><td class="paramname">loopMode</td><td>Should the timeline loop? Takes a <a class="el" href="class_timeline_mixer_1_1_loop_mode.html" title="The purpose of this class is simply to make the LoopMode parameter more readable. You can alternative...">LoopMode</a> option</td></tr>
   </table>
   </dd>
 </dl>
@@ -885,6 +930,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FadeTo</b> (<a class=
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4e4108ba6546a9a6f7bf50c8b8a9380c" name="a4e4108ba6546a9a6f7bf50c8b8a9380c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4108ba6546a9a6f7bf50c8b8a9380c">&#9670;&nbsp;</a></span>SetGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimelineMixer.TimelineMixerComponent.SetGraph </td>
+          <td>(</td>
+          <td class="paramtype">PlayableGraph&#160;</td>
+          <td class="paramname"><em>playableGraph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The playable graph to use can be set before Initialize is called, useful if you need <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> to use a specific graph to help integrate it with your custom tool. Do not use a playable directors graph, or any graph that you don't manage the lifecycle for. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playableGraph</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

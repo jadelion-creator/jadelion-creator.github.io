@@ -10,9 +10,12 @@ var class_timeline_mixer_1_1_timeline_mixer_component =
     [ "FadeOut", "class_timeline_mixer_1_1_timeline_mixer_component.html#a320e6bfd0f5ec1db00944b2781f376e3", null ],
     [ "FadeTo", "class_timeline_mixer_1_1_timeline_mixer_component.html#a541773325a92504b854cfb3be070e90b", null ],
     [ "FadeTo", "class_timeline_mixer_1_1_timeline_mixer_component.html#a547f696d0751eeb27074eadcd5b09d6b", null ],
+    [ "GetExternalConnectionAnimationNode", "class_timeline_mixer_1_1_timeline_mixer_component.html#ab72bdd8433706869f0b2685a58e92d1b", null ],
     [ "GetTimelineWithName", "class_timeline_mixer_1_1_timeline_mixer_component.html#a47c560a4444111de5d94d5c06da5a0a2", null ],
-    [ "Play", "class_timeline_mixer_1_1_timeline_mixer_component.html#a047ab354d8ebdb0cf4b3c21c9789da89", null ],
+    [ "Initialize", "class_timeline_mixer_1_1_timeline_mixer_component.html#ac45bf7c68eccd4b240b89d176c958af7", null ],
+    [ "Play", "class_timeline_mixer_1_1_timeline_mixer_component.html#a3d6e28f7abdbe16638e2600b443ffdad", null ],
     [ "Play", "class_timeline_mixer_1_1_timeline_mixer_component.html#ac002599f256468d8c24e3463785007f1", null ],
     [ "RemoveDuplicates", "class_timeline_mixer_1_1_timeline_mixer_component.html#a87b8b4c7631f372474f7410e9bf269b9", null ],
+    [ "SetGraph", "class_timeline_mixer_1_1_timeline_mixer_component.html#a4e4108ba6546a9a6f7bf50c8b8a9380c", null ],
     [ "SoloModeSwitch", "class_timeline_mixer_1_1_timeline_mixer_component.html#a6afdc393d46fc6107e9ca6046d8046cb", null ]
 ];
