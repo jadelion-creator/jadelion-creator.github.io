@@ -110,44 +110,62 @@ Custom Track Processors</h1>
 <li>Override the <code>ProcessTrack</code> method and connect your playables there.</li>
 <li>Override the <code>DisconnectTrack</code> method if you use custom disconnection logic for rebinding tracks</li>
 </ol>
-<p >Here's an example:</p>
-<div class="fragment"><div class="line">[TrackProcessor(typeof(ExampleTrack))]</div>
-<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>ExampleTrackProcessor : TrackProcessor</div>
-<div class="line">{</div>
-<div class="line">    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> ProcessTrack(PlayableGraph graph, TrackAsset track, ScriptPlayable&lt;TimelinePlayable&gt; playable, <span class="keywordtype">int</span> trackIndex, Component boundComponent, ref PlayableConnectionInfo info)</div>
+<p >Here's an example, this is the LightControlTrackProcessor included with the <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> package:</p>
+<div class="fragment"><div class="line">[TrackProcessor(typeof(LightControlTrack))]</div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">class </span>LightControlTrackProcessor : TrackProcessor</div>
 <div class="line">    {</div>
-<div class="line">        <span class="comment">// Create a playable output</span></div>
-<div class="line">        ScriptPlayableOutput output = ScriptPlayableOutput.Create(graph, track.name);</div>
+<div class="line">        <span class="comment">//Store already generated outputs in a dictionary, this lets us find them later and connect to a mixer if that applies to your track</span></div>
+<div class="line">        <span class="keyword">public</span> Dictionary&lt;Light, ScriptPlayableOutput&gt; lightOutputs = <span class="keyword">new</span> Dictionary&lt;Light, ScriptPlayableOutput&gt;();</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">//Get a reference to the timeline node wrapper, this contains the TimelinePlayable </span></div>
-<div class="line">        PlayableNode timelineNode = info.GetTimelineNode();</div>
+<div class="line">        <span class="keyword">private</span> Dictionary&lt;Playable, PlayableNode&gt; mixerNodes = <span class="keyword">new</span> Dictionary&lt;Playable, PlayableNode&gt;();</div>
+<div class="line">        </div>
+<div class="line">        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> ProcessTrack(PlayableGraph graph, TrackAsset track, ScriptPlayable&lt;TimelinePlayable&gt; playable, <span class="keywordtype">int</span> trackIndex, Object boundComponent, ref PlayableConnectionInfo info)</div>
+<div class="line">        {</div>
+<div class="line">            ScriptPlayableOutput output;</div>
+<div class="line">            Playable lightMixer;</div>
+<div class="line">            PlayableNode lightMixerNode; <span class="comment">//Wrapper for playables</span></div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">// Optionally, create a mixer for the track</span></div>
-<div class="line">        ScriptPlayable&lt;PassthroughPlayable&gt; passthroughMixer = ScriptPlayable&lt;PassthroughPlayable&gt;.Create(graph);</div>
-<div class="line">        passthroughMixer.SetTraversalMode(PlayableTraversalMode.Passthrough);</div>
+<div class="line">            <span class="comment">//Skip if the track is empty or has no binding</span></div>
+<div class="line">            <span class="keywordflow">if</span> (track.isEmpty &amp;&amp; !track.hasClips) <span class="keywordflow">return</span>;</div>
+<div class="line">            <span class="keywordflow">if</span> (boundComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">//Create a PlayableNode wrapper for the mixer</span></div>
-<div class="line">        PlayableNode mixerNode = <span class="keyword">new</span> PlayableNode(passthroughMixer);</div>
+<div class="line">            <span class="comment">//Check if an output already exists for this Light component</span></div>
+<div class="line">            <span class="keywordflow">if</span> (lightOutputs.ContainsKey(boundComponent as Light))</div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">//We&#39;ve found an output, from this we can get the mixer, and the PlayableNode wrapper for it</span></div>
+<div class="line">                lightOutputs.TryGetValue(boundComponent as Light, out output);</div>
+<div class="line">                lightMixer = output.GetSourcePlayable();</div>
+<div class="line">                mixerNodes.TryGetValue(lightMixer, out lightMixerNode);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="comment">//If no output is found, create a new one</span></div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">//Create output</span></div>
+<div class="line">                output = ScriptPlayableOutput.Create(graph, track.name);</div>
+<div class="line">                lightOutputs.Add(boundComponent as Light, output);</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">// If you have a mixer, use the ConnectPlayable method to connect it to the timeline.</span></div>
-<div class="line">        <span class="comment">// This will store information about the connections and ensure the playback methods work as expected.</span></div>
-<div class="line">        <span class="comment">// Only make one connection with ConnectPlayable, this connection will be controled by Timeline Mixer and fade in and out with your timeline.</span></div>
-<div class="line">        ConnectPlayable(mixerNode, timelineNode, trackIndex, ref info);</div>
+<div class="line">                <span class="comment">//Create and store mixer</span></div>
+<div class="line">                lightMixer = ScriptPlayable&lt;LightControlMixer&gt;.Create(graph);</div>
+<div class="line">                ScriptPlayable&lt;LightControlMixer&gt; scriptPlayable = (ScriptPlayable&lt;LightControlMixer&gt;)lightMixer;</div>
+<div class="line">                lightMixerNode = <span class="keyword">new</span> PlayableNode(lightMixer);</div>
+<div class="line">                lightMixerNode.Name = <span class="stringliteral">&quot;Light Mixer Node&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">        output.SetSourcePlayable(passthroughMixer, 0);</div>
-<div class="line">        output.SetUserData(boundComponent);</div>
+<div class="line">                <span class="comment">//The custom made mixer requires a reference to its PlayableNode wrapper to make graph traversal easier</span></div>
+<div class="line">                scriptPlayable.GetBehaviour().SetPlayableNode(lightMixerNode);</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">// If you do NOT have a mixer, or a need for one, you can just set the output&#39;s source playable to be the timeline playable without using the ConnectPlayable method.</span></div>
-<div class="line">        <span class="comment">//output.SetSourcePlayable(playable, trackIndex);</span></div>
+<div class="line">                mixerNodes.Add(lightMixer, lightMixerNode);</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">//Connect output to the mixer</span></div>
+<div class="line">            output.SetSourcePlayable(lightMixerNode.GetPlayable());</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">//Set the bound component for the output</span></div>
+<div class="line">            output.SetUserData(boundComponent as Light);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">//Finally, connect the mixer node to the timeline node using the ConnectPlayable method, this lets TimelineMixer set connection weights</span></div>
+<div class="line">            ConnectPlayable(lightMixerNode, info.GetTimelineNode(), trackIndex, ref info);</div>
+<div class="line">        }</div>
 <div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">//In addition to creating connections on the playable graph, you can customize how things get disconnected if needed.</span></div>
-<div class="line">    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> DisconnectTrack(PlayableNode timelineNode, <span class="keywordtype">int</span> trackIndex)</div>
-<div class="line">    {</div>
-<div class="line">        <span class="comment">//The PlayableNode wrapper lets you disconnect from the Output side, much easier.</span></div>
-<div class="line">        timelineNode.DisconnectOutput(trackIndex);</div>
-<div class="line">    }</div>
-<div class="line">}</div>
 </div><!-- fragment --><p >This example would make a track processor that is applied to a custom timeline track called ExampleTrack.</p>
 <blockquote class="doxtable">
 <p >&zwj;Track processors are discovered automatically at runtime through reflection </p>
