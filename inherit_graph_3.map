@@ -1,5 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,135,73"/>
-<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_passthrough_playable.html" title="This is simply an empty placeholder passthrough playable used to construct and structure the Playable..." alt="" coords="184,5,354,47"/>
-<area shape="rect" id="node3" href="$class_timeline_mixer_1_1_timeline_mixer_playable.html" title=" " alt="" coords="183,72,355,114"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_timeline_mixer_base.html" title="This component is not intended to be used directly, TimelineMixerComponent inherits this,..." alt="" coords="187,31,390,58"/>
+<area shape="rect" id="node3" href="$class_timeline_mixer_1_1_timeline_mixer_component.html" title=" " alt="" coords="438,23,610,65"/>
+<area shape="rect" id="node4" title=" " alt="" coords="17,56,127,83"/>
 </map>

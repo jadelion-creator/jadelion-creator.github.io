@@ -20,9 +20,9 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_timeline_mixer_1_1_play_state.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="#bfbfbf" points="24,-56.75 24,-76 82,-76 82,-56.75 24,-56.75"/>
-<text text-anchor="middle" x="53" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayState</text>
+<g id="a_node2"><a xlink:href="class_timeline_mixer_1_1_fade_state.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="#bfbfbf" points="22.88,-56.75 22.88,-76 83.12,-76 83.12,-56.75 22.88,-56.75"/>
+<text text-anchor="middle" x="53" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">FadeState</text>
 </a>
 </g>
 </g>

@@ -14,6 +14,17 @@ var hierarchy =
     [ "TimelineMixer.EventVariable< T >", "class_timeline_mixer_1_1_event_variable.html", null ],
     [ "TimelineMixer.EventVariable< float >", "class_timeline_mixer_1_1_event_variable.html", null ],
     [ "TimelineMixer.EventVariable< Mode >", "class_timeline_mixer_1_1_event_variable.html", null ],
+    [ "TimelineMixer.FadeState", "class_timeline_mixer_1_1_fade_state.html", [
+      [ "TimelineMixer.FadeTo", "class_timeline_mixer_1_1_fade_to.html", null ]
+    ] ],
+    [ "INotification", null, [
+      [ "TimelineEventNotification", "class_timeline_event_notification.html", null ]
+    ] ],
+    [ "INotificationReceiver", null, [
+      [ "TimelineMixer.TimelineMixerBase", "class_timeline_mixer_1_1_timeline_mixer_base.html", [
+        [ "TimelineMixer.TimelineMixerComponent", "class_timeline_mixer_1_1_timeline_mixer_component.html", null ]
+      ] ]
+    ] ],
     [ "TimelineMixer.ITrackProcessor", "interface_timeline_mixer_1_1_i_track_processor.html", [
       [ "TimelineMixer.TrackProcessor", "class_timeline_mixer_1_1_track_processor.html", [
         [ "TimelineMixer.AnimationTrackProcessor", "class_timeline_mixer_1_1_animation_track_processor.html", null ],
@@ -24,9 +35,7 @@ var hierarchy =
     ] ],
     [ "TimelineMixer.LoopMode", "class_timeline_mixer_1_1_loop_mode.html", null ],
     [ "MonoBehaviour", null, [
-      [ "TimelineMixer.TimelineMixerBase", "class_timeline_mixer_1_1_timeline_mixer_base.html", [
-        [ "TimelineMixer.TimelineMixerComponent", "class_timeline_mixer_1_1_timeline_mixer_component.html", null ]
-      ] ]
+      [ "TimelineMixer.TimelineMixerBase", "class_timeline_mixer_1_1_timeline_mixer_base.html", null ]
     ] ],
     [ "PlayableBehaviour", null, [
       [ "TimelineMixer.PassthroughPlayable", "class_timeline_mixer_1_1_passthrough_playable.html", null ],
@@ -34,11 +43,9 @@ var hierarchy =
     ] ],
     [ "TimelineMixer.PlayableConnectionInfo", "class_timeline_mixer_1_1_playable_connection_info.html", null ],
     [ "TimelineMixer.PlayableNode", "class_timeline_mixer_1_1_playable_node.html", null ],
-    [ "TimelineMixer.PlayState", "class_timeline_mixer_1_1_play_state.html", [
-      [ "TimelineMixer.FadeTo", "class_timeline_mixer_1_1_fade_to.html", null ]
-    ] ],
     [ "TimelineMixer.Editor.ResizeList", "class_timeline_mixer_1_1_editor_1_1_resize_list.html", null ],
     [ "TimelineMixer.Editor.SimpleEditorUtilities", "class_timeline_mixer_1_1_editor_1_1_simple_editor_utilities.html", null ],
     [ "TimelineMixer.TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", null ],
+    [ "TimelineState", "class_timeline_state.html", null ],
     [ "TimelineMixer.TrackProcessorManager", "class_timeline_mixer_1_1_track_processor_manager.html", null ]
 ];

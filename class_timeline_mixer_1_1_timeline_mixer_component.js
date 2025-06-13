@@ -1,6 +1,7 @@
 var class_timeline_mixer_1_1_timeline_mixer_component =
 [
     [ "AddTimeline", "class_timeline_mixer_1_1_timeline_mixer_component.html#a05b04a63d7a5ab1d9bbbd9c50c09ca12", null ],
+    [ "ClearTimelineEvents", "class_timeline_mixer_1_1_timeline_mixer_component.html#aff3c1183e5bf33151d9c2dc757e202d3", null ],
     [ "CreateBindingGroups", "class_timeline_mixer_1_1_timeline_mixer_component.html#a623bc182865f7b7471b3730633c267cd", null ],
     [ "Crossfade", "class_timeline_mixer_1_1_timeline_mixer_component.html#a9592fd73e72bbff90269bcb1219ec3f1", null ],
     [ "Crossfade", "class_timeline_mixer_1_1_timeline_mixer_component.html#aaadc3e0e1ee578ce3f7492d41991feb2", null ],
@@ -17,5 +18,6 @@ var class_timeline_mixer_1_1_timeline_mixer_component =
     [ "Play", "class_timeline_mixer_1_1_timeline_mixer_component.html#ac002599f256468d8c24e3463785007f1", null ],
     [ "RemoveDuplicates", "class_timeline_mixer_1_1_timeline_mixer_component.html#a87b8b4c7631f372474f7410e9bf269b9", null ],
     [ "SetGraph", "class_timeline_mixer_1_1_timeline_mixer_component.html#a4e4108ba6546a9a6f7bf50c8b8a9380c", null ],
+    [ "SetTimelineEvent", "class_timeline_mixer_1_1_timeline_mixer_component.html#ae4a16fc9411fbb312895238255023d1b", null ],
     [ "SoloModeSwitch", "class_timeline_mixer_1_1_timeline_mixer_component.html#a6afdc393d46fc6107e9ca6046d8046cb", null ]
 ];

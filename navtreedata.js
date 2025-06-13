@@ -35,14 +35,15 @@ var NAVTREE =
       [ "The PlayableNode class", "md_doc_pages__3__track_processors.html#autotoc_md8", null ]
     ] ],
     [ "Rebinding tracks at runtime", "md_doc_pages__4__rebinding_tracks.html", null ],
-    [ "Adding Timeline Assets at Runtime", "md_doc_pages__5__add_timelines_at_runtime.html", null ],
-    [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__6__animator_controller.html", [
-      [ "But... Why?", "md_doc_pages__6__animator_controller.html#autotoc_md12", null ]
+    [ "Runtime Events", "md_doc_pages__5__runtime_events.html", null ],
+    [ "Adding Timeline Assets at Runtime", "md_doc_pages__6__add_timelines_at_runtime.html", null ],
+    [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__7__animator_controller.html", [
+      [ "But... Why?", "md_doc_pages__7__animator_controller.html#autotoc_md13", null ]
     ] ],
-    [ "Integrations", "md_doc_pages__7__integrations.html", [
-      [ "Animancer version 8.1 and up", "md_doc_pages__7__integrations.html#autotoc_md14", null ]
+    [ "Integrations", "md_doc_pages__8__integrations.html", [
+      [ "Animancer version 8.1 and up", "md_doc_pages__8__integrations.html#autotoc_md15", null ]
     ] ],
-    [ "Found a Bug or Have a Feature Request?", "md_doc_pages__8__bugs.html", null ],
+    [ "Found a Bug or Have a Feature Request?", "md_doc_pages__9__bugs.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

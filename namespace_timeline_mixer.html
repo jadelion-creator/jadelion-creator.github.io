@@ -108,6 +108,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_event_variable.html">EventVariable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to call a method when variable values have changed. In the case of Timeline Mixer, we use this in <a class="el" href="class_timeline_mixer_1_1_playable_connection_info.html" title="Store information about connections on the PlayableGraph and set / get weights between connections">PlayableConnectionInfo</a> to set connection weights  <a href="class_timeline_mixer_1_1_event_variable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_fade_state.html">FadeState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_fade_to.html">FadeTo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Part of a simple state machine that <a class="el" href="class_timeline_mixer_1_1_timeline_mixer_playable.html">TimelineMixerPlayable</a> makes use of, updates the weights of tracks over time (Fades)  <a href="class_timeline_mixer_1_1_fade_to.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,15 +122,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This track processor will connect the marker track to the graph.  <a href="class_timeline_mixer_1_1_marker_track_processor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_passthrough_playable.html">PassthroughPlayable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is simply an empty placeholder passthrough playable used to construct and structure the PlayableGraph and holds no logic  <a href="class_timeline_mixer_1_1_passthrough_playable.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is simply an empty placeholder passthrough playable used to construct and structure the PlayableGraph and holds no logic. Without an empty to serve as a mixer the TimeNotificationPlayable that signal tracks are built on will not recieve time updates.  <a href="class_timeline_mixer_1_1_passthrough_playable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_playable_connection_info.html">PlayableConnectionInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store information about connections on the PlayableGraph and set / get weights between connections  <a href="class_timeline_mixer_1_1_playable_connection_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper for Playables that allows some reverse traversal of the playable graph, and easy disconnection / reconnection of timeline track ports  <a href="class_timeline_mixer_1_1_playable_node.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_play_state.html">PlayState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timeline_mixer_1_1_signal_track_processor.html">SignalTrackProcessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup outputs for Signal tracks  <a href="class_timeline_mixer_1_1_signal_track_processor.html#details">More...</a><br /></td></tr>
