@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Timeline Mixer Documentation: AnimatorController and TimelineMixerComponent</title>
+<title>Timeline Mixer Documentation: TimelineMixer.TimelineEventNotification Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_doc_pages__7__animator_controller.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('class_timeline_mixer_1_1_timeline_event_notification.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,42 +84,25 @@ $(document).ready(function(){initNavTree('md_doc_pages__7__animator_controller.h
 </iframe>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">AnimatorController and TimelineMixerComponent </div></div>
+<div class="header">
+  <div class="summary">
+<a href="class_timeline_mixer_1_1_timeline_event_notification-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TimelineMixer.TimelineEventNotification Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><blockquote class="doxtable">
-<p >&zwj;TimelineMixerComponent removes AnimatorController references from Animator components if the Animator is targeted by an animation track, and creates a new instance internally to enable mixing between timelines and the AnimatorController. </p>
-</blockquote>
-<p>Timeline Mixer can be used alongside AnimatorControllers easily without any modification to your workflow. Simply create your controller and assign it to an Animator component.</p>
-<p >If a track on a Timeline targets the Animator, Timeline Mixer will consume the AnimatorController and remove the reference from the Animators object field.</p>
-<div class="image">
-<img src="RuntimeAnimator.png" alt=""/>
+<div class="dynheader">
+Inheritance diagram for TimelineMixer.TimelineEventNotification:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_timeline_mixer_1_1_timeline_event_notification__inherit__graph.svg" width="187" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-    <p >Even with an empty controller field on the Animator component you will still be able to inspect the controller through the Animator window, setting parameters on the controller may still work with the Animators Controller field empty, but method calls like Play, Crossfade will not work.</p>
-<p >To get around this, you can get the AnimatorControllerPlayable from the TimelineMixerComponent and treat it like you would the AnimatorController:</p>
-<div class="fragment"><div class="line">using UnityEngine.Animations;</div>
-<div class="line"> </div>
-<div class="line">animator = GetComponent&lt;Animator&gt;();</div>
-<div class="line"> </div>
-<div class="line">AnimatorControllerPlayable animatorControllerPlayable = timelineMixerComponent.GetAnimatorPlayable(animator);</div>
-<div class="line"> </div>
-<div class="line">animatorControllerPlayable.CrossFade(clipName, 1f);</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md13"></a>
-But... Why?</h1>
-<p >Timeline Mixer needs to play nice with Animator Controllers, and it can't do that if they're not on the same PlayableGraph.</p>
-<p >By bringing the AnimatorController into Timeline Mixers PlayableGraph, we can smoothly transition from the AnimatorController to a Timeline without any animation artifacts.</p>
-<p >The Animators object reference is removed to stop any animation conflicts.</p>
-<blockquote class="doxtable">
-<p >&zwj;If TimelineMixerComponent is destroyed, it will attempt to return the AnimatorController to the component. </p>
-</blockquote>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a></li><li class="navelem"><a class="el" href="class_timeline_mixer_1_1_timeline_event_notification.html">TimelineEventNotification</a></li>
     <li class="footer"></li>
   </ul>
 </div>

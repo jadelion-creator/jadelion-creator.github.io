@@ -21,6 +21,8 @@ var annotated_dup =
       [ "PlayableConnectionInfo", "class_timeline_mixer_1_1_playable_connection_info.html", null ],
       [ "PlayableNode", "class_timeline_mixer_1_1_playable_node.html", "class_timeline_mixer_1_1_playable_node" ],
       [ "SignalTrackProcessor", "class_timeline_mixer_1_1_signal_track_processor.html", null ],
+      [ "TimelineEventData", "class_timeline_mixer_1_1_timeline_event_data.html", null ],
+      [ "TimelineEventNotification", "class_timeline_mixer_1_1_timeline_event_notification.html", null ],
       [ "TimelineMixerBase", "class_timeline_mixer_1_1_timeline_mixer_base.html", "class_timeline_mixer_1_1_timeline_mixer_base" ],
       [ "TimelineMixerComponent", "class_timeline_mixer_1_1_timeline_mixer_component.html", "class_timeline_mixer_1_1_timeline_mixer_component" ],
       [ "TimelineMixerPlayable", "class_timeline_mixer_1_1_timeline_mixer_playable.html", "class_timeline_mixer_1_1_timeline_mixer_playable" ],
@@ -28,7 +30,5 @@ var annotated_dup =
       [ "TrackProcessor", "class_timeline_mixer_1_1_track_processor.html", "class_timeline_mixer_1_1_track_processor" ],
       [ "TrackProcessorAttribute", "class_timeline_mixer_1_1_track_processor_attribute.html", null ],
       [ "TrackProcessorManager", "class_timeline_mixer_1_1_track_processor_manager.html", "class_timeline_mixer_1_1_track_processor_manager" ]
-    ] ],
-    [ "TimelineEventNotification", "class_timeline_event_notification.html", null ],
-    [ "TimelineState", "class_timeline_state.html", null ]
+    ] ]
 ];
