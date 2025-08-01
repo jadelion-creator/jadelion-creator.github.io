@@ -43,7 +43,15 @@ var NAVTREE =
     [ "Integrations", "md_doc_pages__8__integrations.html", [
       [ "Animancer version 8.1 and up", "md_doc_pages__8__integrations.html#autotoc_md15", null ]
     ] ],
-    [ "Found a Bug or Have a Feature Request?", "md_doc_pages__9__bugs.html", null ],
+    [ "Found a Bug or Have a Feature Request?", "md_doc_pages__9__bugs.html", [
+      [ "📫 Contact Policy", "md_doc_pages__9__bugs.html#autotoc_md18", [
+        [ "💡 Feedback and suggestions", "md_doc_pages__9__bugs.html#autotoc_md19", null ],
+        [ "❓ Questions about features", "md_doc_pages__9__bugs.html#autotoc_md20", null ],
+        [ "😁  Working on something cool? I'd love to hear about it!", "md_doc_pages__9__bugs.html#autotoc_md21", null ],
+        [ "🎟️ Vouchers and Free Access", "md_doc_pages__9__bugs.html#autotoc_md22", null ],
+        [ "🚫 Spam & Fraud", "md_doc_pages__9__bugs.html#autotoc_md23", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

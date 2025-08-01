@@ -115,5 +115,11 @@ var NAVTREEINDEX0 =
 "md_doc_pages__8__integrations.html":[7],
 "md_doc_pages__8__integrations.html#autotoc_md15":[7,0],
 "md_doc_pages__9__bugs.html":[8],
+"md_doc_pages__9__bugs.html#autotoc_md18":[8,0],
+"md_doc_pages__9__bugs.html#autotoc_md19":[8,0,0],
+"md_doc_pages__9__bugs.html#autotoc_md20":[8,0,1],
+"md_doc_pages__9__bugs.html#autotoc_md21":[8,0,2],
+"md_doc_pages__9__bugs.html#autotoc_md22":[8,0,3],
+"md_doc_pages__9__bugs.html#autotoc_md23":[8,0,4],
 "pages.html":[]
 };
