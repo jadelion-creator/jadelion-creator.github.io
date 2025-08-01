@@ -47,7 +47,7 @@ var NAVTREE =
       [ "📫 Contact Policy", "md_doc_pages__9__bugs.html#autotoc_md18", [
         [ "💡 Feedback and suggestions", "md_doc_pages__9__bugs.html#autotoc_md19", null ],
         [ "❓ Questions about features", "md_doc_pages__9__bugs.html#autotoc_md20", null ],
-        [ "😁  Working on something cool? I'd love to hear about it!", "md_doc_pages__9__bugs.html#autotoc_md21", null ],
+        [ "😁  Working on something cool? I'd love to hear about it! ❤", "md_doc_pages__9__bugs.html#autotoc_md21", null ],
         [ "🎟️ Vouchers and Free Access", "md_doc_pages__9__bugs.html#autotoc_md22", null ],
         [ "🚫 Spam & Fraud", "md_doc_pages__9__bugs.html#autotoc_md23", null ]
       ] ]
