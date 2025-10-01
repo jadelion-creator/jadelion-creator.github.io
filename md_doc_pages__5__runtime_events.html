@@ -93,16 +93,16 @@ $(document).ready(function(){initNavTree('md_doc_pages__5__runtime_events.html',
 <div class="textblock"><p >Events can be added to Timelines at runtime through the SetTimelineEvent method:</p>
 <div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;()</div>
 <div class="line"> </div>
-<div class="line">float time = 2f; //2 seconds</div>
+<div class="line">float eventTime = 2f; //2 seconds</div>
 <div class="line"> </div>
-<div class="line">timelineMixer.SetTimelineEvent(timelineAsset, time, () =&gt; { timelineMixer.FadeOut(timelineAsset, 2f); Debug.Log($&quot;{timelineAsset.name} Event Fired!&quot;); });</div>
+<div class="line">timelineMixer.SetTimelineEvent(timelineAsset, eventTime, () =&gt; { timelineMixer.FadeOut(timelineAsset, 2f); Debug.Log($&quot;{timelineAsset.name} Event Fired!&quot;); });</div>
 <div class="line"> </div>
 <div class="line">//OR</div>
 <div class="line"> </div>
 <div class="line">Action callback;</div>
 <div class="line">callback = () =&gt; { timelineMixer.FadeOut(timelineAsset, 2f); Debug.Log($&quot;{timelineAsset.name} Event Fired!&quot;); };</div>
 <div class="line"> </div>
-<div class="line">timelineMixer.SetTimelineEvent(timelineAsset, (float)eventTime, callback);</div>
+<div class="line">timelineMixer.SetTimelineEvent(timelineAsset, eventTime, callback);</div>
 </div><!-- fragment --><p >This sets an event on the timeline at the 2 second mark, which will launch the callback passed in when creating the event.</p>
 <p >It is not possible to remove individual events at this time, events can be cleared however:</p>
 <div class="fragment"><div class="line">timelineMixer.ClearTimelineEvents(timelineAsset);</div>
