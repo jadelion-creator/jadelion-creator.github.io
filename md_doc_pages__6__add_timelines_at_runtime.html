@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Timeline Mixer Documentation: Adding Timeline Assets at Runtime</title>
+<title>Timeline Mixer Documentation: Adding and Removing Timeline Assets at Runtime</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,10 +18,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="anime.umd.js" rel="stylesheet" type="text/css"/>
-<link href="demo_fragment.html" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -87,19 +83,68 @@ $(document).ready(function(){initNavTree('md_doc_pages__6__add_timelines_at_runt
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Adding Timeline Assets at Runtime </div></div>
+  <div class="headertitle"><div class="title">Adding and Removing Timeline Assets at Runtime </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >Timeline Mixer supports adding timeline assets to the system at runtime.</p>
-<p >To get started with this, we can use the AddTimeline method and pass in the timeline asset:</p>
-<div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;()</div>
+<div class="textblock"><p >Timeline Mixer supports adding and removing <code>TimelineAsset</code>s at runtime, allowing timelines to be dynamically loaded, disconnected, or destroyed as needed.</p>
+<p >This enables workflows such as conditional cutscenes, dynamic animation systems, or memory-conscious runtime setups.</p>
+<hr  />
+ <h1><a class="anchor" id="autotoc_md15"></a>
+Adding Timeline Assets</h1>
+<p >To add a timeline at runtime, call <code>AddTimeline</code> and provide the <code>TimelineAsset</code> to load:</p>
+<div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;();</div>
 <div class="line"> </div>
-<div class="line">timelineMixer.AddTimeline(TimelineAsset timelineAsset);</div>
-</div><!-- fragment --><p >This will add the timeline to the Timeline Mixer Component, however there will be no bindings on any of the tracks.</p>
-<p >To fix this, use the RebindTrack method on each track in the timeline that takes a binding.</p>
-<div class="fragment"><div class="line">timelineMixer.RebindTrack(timelineAsset, &quot;trackName&quot;, newBinding)</div>
+<div class="line">timelineMixer.AddTimeline(TimelineAsset timelineAsset, <span class="keywordtype">bool</span> useDirectorBindings = <span class="keyword">true</span>);</div>
+</div><!-- fragment --><p >This registers the timeline with the Timeline Mixer and builds its playable graph.</p>
+<h1><a class="anchor" id="autotoc_md16"></a>
+Track Bindings</h1>
+<p >If <code>useDirectorBindings</code> is set to <code>true</code>, the Playable Director will be searched for matching track bindings and applied automatically. All tracks with valid bindings will complete their graph construction.</p>
+<p >If <code>useDirectorBindings</code> is false, no bindings are applied automatically:</p>
+<ul>
+<li>Tracks that do not require bindings will still build normally.</li>
+<li>Tracks that do require bindings will remain unconnected unless:<ul>
+<li>the track processor provides a fallback or default binding, or</li>
+<li>the track is explicitly rebound at runtime.</li>
+</ul>
+</li>
+</ul>
+<p >To bind or rebind tracks manually, use RebindTrack:</p>
+<div class="fragment"><div class="line">timelineMixer.RebindTrack(timelineAsset, &quot;trackName&quot;, newBinding);</div>
 <div class="line">timelineMixer.RebindTrack(&quot;timelineName&quot;, &quot;trackName&quot;, newBinding);</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><blockquote class="doxtable">
+<p >&zwj;To reconnect tracks that don't support bindings, use null as the bound object </p><div class="fragment"><div class="line">timelineMixer.RebindTrack(<span class="stringliteral">&quot;timelineName&quot;</span>, <span class="stringliteral">&quot;trackName&quot;</span>, <span class="keyword">null</span>);</div>
+</div><!-- fragment --> </blockquote>
+<p>If a binding is found but is null, you may still need to rebind the track manually or assign the binding in the editor using the edit button next to the timeline field on the Timeline Mixer Component.</p>
+<h1><a class="anchor" id="autotoc_md17"></a>
+Disconnecting Tracks</h1>
+<p >To completely disconnect a track from the playable graph use <b>DisconnectTrack</b></p>
+<div class="fragment"><div class="line">public void DisconnectTrack(TimelineAsset timelineAsset, string trackName);</div>
+</div><!-- fragment --><p >A disconnected track remains part of the timeline but is no longer connected to its mixer or output.</p>
+<ul>
+<li>Disconnected tracks are effectively muted at runtime</li>
+<li>The timeline remains loaded and can be rebound later without rebuilding the graph</li>
+</ul>
+<p >If all tracks on a timeline are disconnected, the timeline will remain loaded but inactive. The Timeline Mixer Window will display a warning indicating that the timeline has no active bindings.</p>
+<div class="image">
+<img src="NoBindings.png" alt=""/>
+</div>
+    <blockquote class="doxtable">
+<p >&zwj;Note: Muting a track in the Timeline editor is not the same as disconnecting it.</p>
+<p >Muted tracks are not built by Timeline at runtime, and Timeline Mixer will not detect or manage them. </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md18"></a>
+Removing Timeline Assets at Runtime</h1>
+<p >To completely remove a timeline from the component, use <code>RemoveTimeline</code></p>
+<div class="fragment"><div class="line">public void RemoveTimeline(TimelineAsset timelineAsset);</div>
+</div><!-- fragment --><p >This will:</p>
+<ul>
+<li>stop the timeline</li>
+<li>disconnect and destroy its playable subgraph</li>
+<li>remove all internal data associated with the timeline</li>
+<li>remove the TimelineAsset from the Timeline Mixer Component</li>
+</ul>
+<p >Once removed, the timeline must be added again using <code>AddTimeline</code> if it is needed later. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->

@@ -1,4 +1,0 @@
-<map id="Simple.Timeline.FadeTo" name="Simple.Timeline.FadeTo">
-<area shape="rect" id="node1" title="Part of a simple state machine that TimelineMixerPlayable makes use of, updates the weights of tracks..." alt="" coords="5,80,158,107"/>
-<area shape="rect" id="node2" href="$class_simple_1_1_timeline_1_1_play_state.html" title=" " alt="" coords="43,5,120,32"/>
-</map>

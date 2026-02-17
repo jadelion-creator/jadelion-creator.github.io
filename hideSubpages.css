@@ -1,0 +1,8 @@
+/* Hide the automatically generated Subpages section */
+div.contents > h2:has(+ ul) {
+    display: none;
+}
+
+div.contents > h2:has(+ ul) + ul {
+    display: none;
+}

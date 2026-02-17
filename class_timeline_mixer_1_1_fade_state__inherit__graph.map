@@ -1,4 +1,5 @@
 <map id="TimelineMixer.FadeState" name="TimelineMixer.FadeState">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,163,32"/>
-<area shape="rect" id="node2" href="$class_timeline_mixer_1_1_fade_to.html" title="Part of a simple state machine that TimelineMixerPlayable makes use of, updates the weights of tracks..." alt="" coords="13,80,155,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,163,31"/>
+<area shape="rect" id="Node000002" href="$class_timeline_mixer_1_1_fade_to.html" title="Part of a simple state machine that TimelineMixerPlayable makes use of, updates the weights of tracks..." alt="" coords="13,79,155,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,46,87,79,81,79,81,46"/>
 </map>

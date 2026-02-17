@@ -1,5 +1,0 @@
-<map id="AnimationTrackProcessor" name="AnimationTrackProcessor">
-<area shape="rect" id="node1" title="Processes animation tracks and connects them to the correct mixer on the playable graph...." alt="" coords="5,155,168,182"/>
-<area shape="rect" id="node2" href="$class_track_processor.html" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="33,80,140,107"/>
-<area shape="rect" id="node3" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="31,5,142,32"/>
-</map>

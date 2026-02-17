@@ -1,8 +1,13 @@
 <map id="TimelineMixer.TrackProcessor" name="TimelineMixer.TrackProcessor">
-<area shape="rect" id="node1" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="165,113,349,140"/>
-<area shape="rect" id="node3" href="$class_timeline_mixer_1_1_animation_track_processor.html" title="Processes animation tracks and connects them to the correct mixer on the playable graph...." alt="" coords="397,5,580,47"/>
-<area shape="rect" id="node4" href="$class_timeline_mixer_1_1_audio_track_processor.html" title="Processes audio tracks and connects them to the correct mixer on the playable graph...." alt="" coords="408,72,569,114"/>
-<area shape="rect" id="node5" href="$class_timeline_mixer_1_1_marker_track_processor.html" title="This track processor will connect the marker track to the graph." alt="" coords="406,139,572,181"/>
-<area shape="rect" id="node6" href="$class_timeline_mixer_1_1_signal_track_processor.html" title="Setup outputs for Signal tracks" alt="" coords="407,205,570,247"/>
-<area shape="rect" id="node2" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="5,113,117,140"/>
+<area shape="rect" id="Node000001" title="Track processor for timeline tracks that do not have a custom track processor, this will connect all ..." alt="" coords="242,112,426,137"/>
+<area shape="rect" id="Node000003" href="$class_timeline_mixer_1_1_animation_track_processor.html" title="Processes animation tracks and connects them to the correct mixer on the playable graph...." alt="" coords="474,5,657,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="374,102,473,57,504,44,506,49,475,61,377,107"/>
+<area shape="rect" id="Node000004" href="$class_timeline_mixer_1_1_audio_track_processor.html" title="Processes audio tracks and connects them to the correct mixer on the playable graph...." alt="" coords="486,71,646,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,106,485,100,485,105,442,112"/>
+<area shape="rect" id="Node000005" href="$class_timeline_mixer_1_1_marker_track_processor.html" title="This track processor will connect the marker track to the graph." alt="" coords="482,136,649,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="442,137,482,142,482,147,441,142"/>
+<area shape="rect" id="Node000006" href="$class_timeline_mixer_1_1_signal_track_processor.html" title="Setup outputs for Signal tracks." alt="" coords="484,201,647,242"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="377,142,475,186,507,198,505,203,473,191,375,147"/>
+<area shape="rect" id="Node000002" href="$interface_timeline_mixer_1_1_i_track_processor.html" title=" " alt="" coords="5,112,194,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,122,241,122,241,127,209,127"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['balanceweights_0',['BalanceWeights',['../class_timeline_mixer_1_1_animation_balancer.html#ab9b1b82f5d2540c991195ca27c9a5821',1,'TimelineMixer::AnimationBalancer']]],
-  ['bindingdata_1',['BindingData',['../class_timeline_mixer_1_1_binding_data.html',1,'TimelineMixer']]]
+  ['8_201_20and_20up_0',['Animancer version 8.1 and up',['../animancer.html#autotoc_md18',1,'']]]
 ];

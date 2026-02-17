@@ -18,10 +18,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="anime.umd.js" rel="stylesheet" type="text/css"/>
-<link href="demo_fragment.html" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -90,7 +86,10 @@ $(document).ready(function(){initNavTree('md_doc_pages__1__getting_started.html'
   <div class="headertitle"><div class="title">Getting Started </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >To install Timeline Mixer, open the Package Manager window, find Timeline Mixer under "My Assets", and click download, and then import.</p>
+<div class="textblock"><p ><a class="anchor" id="getting_started"></a> </p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Getting Started</h1>
+<p >To install Timeline Mixer, open the Package Manager window, find Timeline Mixer under "My Assets", and click download, and then import.</p>
 <p >To get started, create an empty GameObject. With it selected, in the Inspector window, click “Add Component.”</p>
 <p >Search for TimelineMixerComponent and add it to your GameObject.</p>
 <div class="image">
@@ -104,8 +103,22 @@ $(document).ready(function(){initNavTree('md_doc_pages__1__getting_started.html'
 </div>
     <p >Add your Timeline Assets to the fields in the Timelines list. To edit your timeline, press the “Edit” button next to it on the Timeline Mixer component.</p>
 <p >The selected Timeline will be placed in the Playable Director for editing, and the Timeline Window will open. Any changes to bindings or exposed references will be saved in the Playable Director and used to set up Timeline Mixer.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Playback at Runtime</h1>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Initializing at runtime</h2>
+<p >By default, Auto Initialize is enabled on the Timeline Mixer Component. If you disable this option, you must initialize the component manually at runtime.</p>
+<p >To initialize the component, call:</p>
+<div class="fragment"><div class="line">timelineMixerComponent.Initialize();</div>
+</div><!-- fragment --><p> This builds the playable graph and prepares all configured timelines for playback.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Uninitializing</h2>
+<p >To return the component to a dormant, uninitialized state, call: </p><div class="fragment"><div class="line">timelineMixerComponent.Uninitialize();</div>
+</div><!-- fragment --><p >This will:</p><ul>
+<li>destroy the playable graph</li>
+<li>clear all internal runtime data</li>
+</ul>
+<p >After calling Uninitialize, the Timeline Mixer Component cannot be used until <code>Initialize</code> is called again. Playback does not function while the component is uninitialized.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Playback at Runtime</h2>
 <p >In your script, add the namespace: <code>using <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a>;</code></p>
 <p >Get a reference to the Timeline Mixer component and use the playback methods:</p>
 <div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;();</div>
@@ -130,8 +143,8 @@ Playback at Runtime</h1>
 <p >&zwj;<code>LoopMode.loop</code> will cause the Timeline to loop back to its start time once it exceeds its duration.</p>
 <p ><code>LoopMode.Endless</code> will attempt to keep the timeline running beyond its duration, which can be useful with AnimationClips that have Post-Extrapolate set to Continue. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Fast Forward / Rewind</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Fast Forward / Rewind</h2>
 <p >Timeline Mixer has the ability to set the speed and the current time of a timeline. If the speed is set to a negative value, the timeline will play in reverse.</p>
 <div class="fragment"><div class="line">timelineMixer.SetSpeed(TimelineAsset timelineAsset, <span class="keywordtype">float</span> speed);</div>
 <div class="line"> </div>

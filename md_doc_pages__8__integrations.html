@@ -18,10 +18,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="anime.umd.js" rel="stylesheet" type="text/css"/>
-<link href="demo_fragment.html" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -90,37 +86,11 @@ $(document).ready(function(){initNavTree('md_doc_pages__8__integrations.html',''
   <div class="headertitle"><div class="title">Integrations </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >Timeline Mixer is built on the Playables API, which allows it to blend or mix animation streams with other Playables based systems or animation based Playables.</p>
-<h1><a class="anchor" id="autotoc_md15"></a>
-Animancer version 8.1 and up</h1>
-<p >Timeline Mixer can work well with Animancer, the minimum version of Animancer that is currently supported is 8.1</p>
-<p >To get started using Animancer and Timeline Mixer together, the support UnityPackage will need to be installed. Navigate to Assets -&gt; <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> -&gt; Scripts -&gt; Integrations</p>
-<p >Install the Animancer support package after installing Animancer itself, this support package also includes an example scene.</p>
-<p >Add an AnimancerComponent to your character / GameObject.</p>
-<p >Next, in your scripts include the namespace:</p>
-<div class="fragment"><div class="line">using TimelineMixer.Integrations.AnimancerUtilities;</div>
-</div><!-- fragment --><p >Now we can initialize an animancer component, and place its Playables on TimelineMixers PlayableGraph.</p>
-<p >We just need to be certain that one of the Timelines Animation Tracks is targeting the same Animator that has the AnimancerComponent, and then we can link it to <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> with:</p>
-<div class="fragment"><div class="line">bool muteOtherConnections = true;</div>
-<div class="line">float weight = 1f;</div>
-<div class="line"> </div>
-<div class="line">TimelineMixerAnimancerUtilities.InitializeAnimancer(timelineMixerComponent, animancerComponent, weight, muteOtherConnections);</div>
-</div><!-- fragment --><blockquote class="doxtable">
-<p >&zwj;If the Animancer Component has already been used or initialized, this will destroy its current graph and reinitialize it. </p>
-</blockquote>
-<blockquote class="doxtable">
-<p >&zwj;Animancers Playables are connected to the same AnimationMixerPlayable that AnimatorControllers are sent to. </p>
-</blockquote>
-<p>Set weight to 1f to give Animancer full influence, and muteOtherConnections to true to set other connections on the Animation Mixer to 0f.</p>
-<p >If you need to access this mixer to change weights manually, you can do so with:</p>
-<div class="fragment"><div class="line">PlayableNode externalSystemNode = timelineMixerComponent.GetExternalConnectionAnimationNode(animator);</div>
-</div><!-- fragment --><p >This returns the PlayableNode wrapper for the mixer.</p>
-<div class="fragment"><div class="line">// Get a list of connected inputs</div>
-<div class="line">List&lt;int&gt; inputConnections = externalSystemNode.GetListConnectedInputs();</div>
-<div class="line"> </div>
-<div class="line">// Set weights as desired, this mixers input weights are not automatically managed by Timeline Mixer.</div>
-<div class="line">externalSystemNode.SetInputWeight(inputConnections[0], 0f);</div>
-</div><!-- fragment --><p >To play animation clips, use the AnimancerComponents playback methods like normal after initializing with Timeline Mixer. </p>
+<div class="textblock"><p ><a class="anchor" id="IntegrationsPage"></a></p>
+<ul>
+<li><a class="el" href="md_doc_pages__integrations__animancer.html#animancer">animancer</a></li>
+<li>test2 </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

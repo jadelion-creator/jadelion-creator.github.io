@@ -25,33 +25,7 @@
 var NAVTREE =
 [
   [ "Timeline Mixer Documentation", "index.html", [
-    [ "Getting Started", "md_doc_pages__1__getting_started.html", [
-      [ "Playback at Runtime", "md_doc_pages__1__getting_started.html#autotoc_md1", null ],
-      [ "Fast Forward / Rewind", "md_doc_pages__1__getting_started.html#autotoc_md2", null ]
-    ] ],
-    [ "Timeline Mixer Window", "md_doc_pages__2__timeline_mixer_window.html", null ],
-    [ "Track Processors", "md_doc_pages__3__track_processors.html", [
-      [ "Custom Track Processors", "md_doc_pages__3__track_processors.html#autotoc_md7", null ],
-      [ "The PlayableNode class", "md_doc_pages__3__track_processors.html#autotoc_md8", null ]
-    ] ],
-    [ "Rebinding tracks at runtime", "md_doc_pages__4__rebinding_tracks.html", null ],
-    [ "Runtime Events", "md_doc_pages__5__runtime_events.html", null ],
-    [ "Adding Timeline Assets at Runtime", "md_doc_pages__6__add_timelines_at_runtime.html", null ],
-    [ "AnimatorController and TimelineMixerComponent", "md_doc_pages__7__animator_controller.html", [
-      [ "But... Why?", "md_doc_pages__7__animator_controller.html#autotoc_md13", null ]
-    ] ],
-    [ "Integrations", "md_doc_pages__8__integrations.html", [
-      [ "Animancer version 8.1 and up", "md_doc_pages__8__integrations.html#autotoc_md15", null ]
-    ] ],
-    [ "Found a Bug or Have a Feature Request?", "md_doc_pages__9__bugs.html", [
-      [ "📫 Contact Policy", "md_doc_pages__9__bugs.html#autotoc_md18", [
-        [ "💡 Feedback and suggestions", "md_doc_pages__9__bugs.html#autotoc_md19", null ],
-        [ "❓ Questions about features", "md_doc_pages__9__bugs.html#autotoc_md20", null ],
-        [ "😁  Working on something cool? I'd love to hear about it! ❤", "md_doc_pages__9__bugs.html#autotoc_md21", null ],
-        [ "🎟️ Access Requests", "md_doc_pages__9__bugs.html#autotoc_md22", null ],
-        [ "🚫 Spam & Fraud", "md_doc_pages__9__bugs.html#autotoc_md23", null ]
-      ] ]
-    ] ],
+    [ "Manual", "manual.html", "manual" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -69,8 +43,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"add_at_runtime.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

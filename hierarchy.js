@@ -11,9 +11,7 @@ var hierarchy =
     [ "EditorWindow", null, [
       [ "TimelineMixer.Editor.TimelineMixerWindow", "class_timeline_mixer_1_1_editor_1_1_timeline_mixer_window.html", null ]
     ] ],
-    [ "TimelineMixer.EventVariable< T >", "class_timeline_mixer_1_1_event_variable.html", null ],
-    [ "TimelineMixer.EventVariable< float >", "class_timeline_mixer_1_1_event_variable.html", null ],
-    [ "TimelineMixer.EventVariable< Mode >", "class_timeline_mixer_1_1_event_variable.html", null ],
+    [ "TimelineMixer.EventVariable&lt; T &gt;", "class_timeline_mixer_1_1_event_variable-1-g.html", null ],
     [ "TimelineMixer.FadeState", "class_timeline_mixer_1_1_fade_state.html", [
       [ "TimelineMixer.FadeTo", "class_timeline_mixer_1_1_fade_to.html", null ]
     ] ],
