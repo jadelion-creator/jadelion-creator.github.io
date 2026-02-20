@@ -103,8 +103,7 @@ $(function(){initNavTree('processors.html','',''); });
 <img src="TrackProcessors_Signal.png" alt=""/>
 </div>
     <p>Track processors manage the section highlighted in red. They connect the Timeline to any required mixer and other playables, and then to the output (which is bound to your component).</p>
-<p>In signal tracks, this Passthrough playable is not strictly necessary but serves as a good example for creating a custom track processor with your own mixer.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 Custom Track Processors</h2>
 <p>You can customize how the timeline connects to its outputs on the Playable Graph by using a custom Track Processor. If your custom track doesn't have a specialized track processor, <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> will use a default one.</p>
 <p>To create one, follow these steps:</p>
@@ -173,10 +172,11 @@ Custom Track Processors</h2>
 <div class="line">    }</div>
 </div><!-- fragment --><p>This example would make a track processor that is applied to a custom timeline track called LightControlTrack.</p>
 <blockquote class="doxtable">
-<p>Track processors are discovered automatically at runtime through reflection </p>
+<p>Track processors are discovered automatically at runtime through reflection and cached, one instance of each track processor is activated </p>
 </blockquote>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 The PlayableNode class</h2>
+<p><a class="el" href="class_timeline_mixer_1_1_playable_node.html" title="TimelineMixer.PlayableNode">TimelineMixer.PlayableNode</a></p>
 <p>PlayableNode provides a lot of quality of life features, its purpose is to wrap a Playable such as AnimationMixerPlayable and track its connections, and make connecting and disconnecting easier.</p>
 <p>You can find out what ports on one Playable are connected which ports on another, not an easy task normally.</p>
 <p>Instead of directly connecting Playables to each other, wrap them in a PlayableNode and use that to connect to other PlayableNodes. Doing this tracks all your connections, and makes navigating downstream AND upstream on the graph possible in an easy way. </p>

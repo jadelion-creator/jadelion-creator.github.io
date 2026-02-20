@@ -98,27 +98,30 @@ $(function(){initNavTree('modes.html','',''); });
 <li>How many timelines may be active simultaneously</li>
 <li>Whether animation balancing is applied</li>
 </ul>
+<p><img src="modes.png" alt="" class="inline"/>    </p>
+<p><img src="unsafemode.png" alt="" class="inline"/>    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Mode  </th><th class="markdownTableHeadNone">Multiple Active Timelines  </th><th class="markdownTableHeadNone">Animation Balancing  </th><th class="markdownTableHeadNone">Intended Use  </th></tr>
+<th class="markdownTableHeadNone">Mode  </th><th class="markdownTableHeadNone">Multiple Active Timelines  </th><th class="markdownTableHeadNone">Animation Balancing  </th><th class="markdownTableHeadNone">Visible in inspector  </th><th class="markdownTableHeadNone">Intended Use  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Multiple  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">Enabled  </td><td class="markdownTableBodyNone">Layered blending or general sequencing  </td></tr>
+<td class="markdownTableBodyNone">Multiple  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">Enabled  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">Layered blending or general sequencing  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Solo  </td><td class="markdownTableBodyNone">No  </td><td class="markdownTableBodyNone">Enabled  </td><td class="markdownTableBodyNone">State-style switching  </td></tr>
+<td class="markdownTableBodyNone">Solo  </td><td class="markdownTableBodyNone">No  </td><td class="markdownTableBodyNone">Enabled  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">State-style switching  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Animation Unsafe  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">Disabled  </td><td class="markdownTableBodyNone">Advanced / debugging use  </td></tr>
+<td class="markdownTableBodyNone">Animation Unsafe  </td><td class="markdownTableBodyNone">Yes  </td><td class="markdownTableBodyNone">Disabled  </td><td class="markdownTableBodyNone">When Active  </td><td class="markdownTableBodyNone">Advanced / debugging use  </td></tr>
 </table>
 <blockquote class="doxtable">
 <p>The “Intended Use” column reflects common usage patterns, not strict limitations. Modes may be used in any workflow that fits your design. </p>
 </blockquote>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+<hr  />
+<h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Multiple Mode</h2>
 <p>Allows multiple timelines to be active and blended simultaneously. If animation tracks target the same object, Timeline Mixer automatically balances animation weights to prevent conflicts.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 Solo Mode</h2>
 <p>Ensures that only one timeline remains active at a time.</p>
 <p>Calling <span class="tt">FadeIn</span> on a timeline automatically triggers <span class="tt">FadeOut</span> on all other active timelines.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Animation Unsafe Mode</h2>
 <p>Allows multiple timelines to be active, but disables animation balancing.</p>
 <p>When multiple animation tracks target the same object, no automatic weight correction is applied. This may result in unexpected and unpredictable blending behavior.</p>

@@ -6,7 +6,7 @@ var searchData=
   ['fadeto_3',['FadeTo',['../class_timeline_mixer_1_1_fade_to.html',1,'TimelineMixer.FadeTo'],['../class_timeline_mixer_1_1_timeline_mixer_base.html#adab9ca4d0dddf7e07e62403d0f84ac19',1,'TimelineMixer.TimelineMixerBase.FadeTo()'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#a541773325a92504b854cfb3be070e90b',1,'TimelineMixer.TimelineMixerComponent.FadeTo(string timelineAssetName, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null)'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#a547f696d0751eeb27074eadcd5b09d6b',1,'TimelineMixer.TimelineMixerComponent.FadeTo(TimelineAsset timelineAsset, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null, float easeOut=-1)']]],
   ['fast_20forward_20rewind_4',['Fast Forward / Rewind',['../getting_started.html#autotoc_md16',1,'']]],
   ['feature_20request_5',['Found a Bug or Have a Feature Request?',['../contact.html',1,'manual']]],
-  ['features_6',['Key Features',['../index.html#autotoc_md21',1,'']]],
+  ['features_6',['Key Features',['../index.html#autotoc_md22',1,'']]],
   ['features_7',['❓ Questions about features',['../contact.html#autotoc_md9',1,'']]],
   ['feedback_20and_20suggestions_8',['💡 Feedback and suggestions',['../contact.html#autotoc_md8',1,'']]],
   ['forward_20rewind_9',['Fast Forward / Rewind',['../getting_started.html#autotoc_md16',1,'']]],
