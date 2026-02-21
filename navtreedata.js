@@ -25,7 +25,16 @@
 var NAVTREE =
 [
   [ "Timeline Mixer Documentation", "index.html", [
-    [ "Manual", "manual.html", "manual" ],
+    [ "Getting Started", "getting_started.html", null ],
+    [ "Timeline Mixer Window", "tm_window.html", null ],
+    [ "Modes", "modes.html", null ],
+    [ "Animator Controllers", "animator.html", null ],
+    [ "Runtime Events", "events.html", null ],
+    [ "Rebinding Tracks at Runtime", "rebinding.html", null ],
+    [ "Adding and Removing Timelines at Runtime", "add_at_runtime.html", null ],
+    [ "Track Processors", "processors.html", null ],
+    [ "Integrations", "integrations.html", "integrations" ],
+    [ "Found a Bug or Have a Feature Request?", "contact.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

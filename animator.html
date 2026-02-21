@@ -111,7 +111,7 @@ $(function(){initNavTree('animator.html','',''); });
 <div class="line">AnimatorControllerPlayable animatorControllerPlayable = timelineMixerComponent.GetAnimatorPlayable(animator);</div>
 <div class="line"> </div>
 <div class="line">animatorControllerPlayable.CrossFade(clipName, 1f);</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
 But... Why?</h2>
 <p>Timeline Mixer needs to play nice with Animator Controllers, and it can't do that if they're not on the same PlayableGraph.</p>
 <p>By bringing the AnimatorController into Timeline Mixers PlayableGraph, we can smoothly transition from the AnimatorController to a Timeline without any animation artifacts.</p>
@@ -127,7 +127,6 @@ But... Why?</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="manual.html">Manual</a></li>
     <li class="footer"></li>
   </ul>
 </div>

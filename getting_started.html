@@ -107,14 +107,14 @@ $(function(){initNavTree('getting_started.html','',''); });
 </div>
     <p>Add your Timeline Assets to the fields in the Timelines list. To edit your timeline, press the “Edit” button next to it on the Timeline Mixer component.</p>
 <p>The selected Timeline will be placed in the Playable Director for editing, and the Timeline Window will open. Any changes to bindings or exposed references will be saved in the Playable Director and used to set up Timeline Mixer.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 Initializing at runtime</h2>
 <p>By default, Auto Initialize is enabled on the Timeline Mixer Component. If you disable this option, you must initialize the component manually at runtime.</p>
 <p>To initialize the component, call:</p>
 <div class="fragment"><div class="line"> cs</div>
 <div class="line">timelineMixerComponent.Initialize();</div>
 </div><!-- fragment --><p> This builds the playable graph and prepares all configured timelines for playback.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 Uninitializing</h2>
 <p>To return the component to a dormant, uninitialized state, call: </p><div class="fragment"><div class="line"> cs</div>
 <div class="line">timelineMixerComponent.Uninitialize();</div>
@@ -123,7 +123,7 @@ Uninitializing</h2>
 <li>clear all internal runtime data</li>
 </ul>
 <p>After calling Uninitialize, the Timeline Mixer Component cannot be used until <span class="tt">Initialize</span> is called again. Playback does not function while the component is uninitialized.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 Playback at Runtime</h2>
 <p>In your script, add the namespace: <span class="tt">using <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a>;</span></p>
 <p>Get a reference to the Timeline Mixer component and use the playback methods:</p>
@@ -149,7 +149,7 @@ Playback at Runtime</h2>
 <p><span class="tt">LoopMode.loop</span> will cause the Timeline to loop back to its start time once it exceeds its duration.</p>
 <p><span class="tt">LoopMode.Endless</span> will attempt to keep the timeline running beyond its duration, which can be useful with AnimationClips that have Post-Extrapolate set to Continue. </p>
 </blockquote>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 Fast Forward / Rewind</h2>
 <p>Timeline Mixer has the ability to set the speed and the current time of a timeline. If the speed is set to a negative value, the timeline will play in reverse.</p>
 <div class="fragment"><div class="line">timelineMixer.SetSpeed(TimelineAsset timelineAsset, <span class="keywordtype">float</span> speed);</div>
@@ -169,7 +169,6 @@ Fast Forward / Rewind</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="manual.html">Manual</a></li>
     <li class="footer"></li>
   </ul>
 </div>
