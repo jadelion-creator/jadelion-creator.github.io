@@ -2,6 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class="dark-mode">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R88K0J5YCC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R88K0J5YCC');
+</script>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
@@ -122,13 +130,13 @@ Track Bindings</h2>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>To reconnect tracks that don't support bindings, use null as the bound object </p><div class="fragment"><div class="line">timelineMixer.RebindTrack(<span class="stringliteral">&quot;timelineName&quot;</span>, <span class="stringliteral">&quot;trackName&quot;</span>, <span class="keyword">null</span>);</div>
 </div><!-- fragment --> </blockquote>
-<p>If a binding is found but is null, you may still need to rebind the track manually or assign the binding in the editor using the edit button next to the timeline field on the Timeline Mixer Component.</p>
+<p>If a binding is null, you may still need to rebind the track manually or assign the binding in the editor using the edit button next to the timeline field on the Timeline Mixer Component.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Disconnecting Tracks</h2>
 <p>To completely disconnect a track from the playable graph use <b>DisconnectTrack</b></p>
 <div class="fragment"><div class="line"> cs</div>
 <div class="line">public void DisconnectTrack(TimelineAsset timelineAsset, string trackName);</div>
-</div><!-- fragment --><p>A disconnected track remains part of the timeline but is no longer connected to its mixer or output.</p>
+</div><!-- fragment --><p>A disconnected track remains part of the timeline but is no longer connected to its mixer or output on the playable graph.</p>
 <ul>
 <li>Disconnected tracks are effectively muted at runtime</li>
 <li>The timeline remains loaded and can be rebound later without rebuilding the graph</li>
