@@ -144,8 +144,8 @@ void&#160;</td><td class="memItemRight"><b>UninitializeAndClearTimelines</b> ()<
 <tr class="memdesc:a320e6bfd0f5ec1db00944b2781f376e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fades out a Timeline matching the TimelineAsset passed in.  <br /></td></tr>
 <tr class="memitem:aaadc3e0e1ee578ce3f7492d41991feb2" id="r_aaadc3e0e1ee578ce3f7492d41991feb2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaadc3e0e1ee578ce3f7492d41991feb2">Crossfade</a> (TimelineAsset fadeInAsset, TimelineAsset fadeOutAsset=null, float fadeTime=1f, float startTime=-1f)</td></tr>
 <tr class="memdesc:aaadc3e0e1ee578ce3f7492d41991feb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fades in one Timeline and fades out another Timeline at the same rate.  <br /></td></tr>
-<tr class="memitem:a547f696d0751eeb27074eadcd5b09d6b" id="r_a547f696d0751eeb27074eadcd5b09d6b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a547f696d0751eeb27074eadcd5b09d6b">FadeTo</a> (TimelineAsset timelineAsset, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null, float easeOut=-1)</td></tr>
-<tr class="memdesc:a547f696d0751eeb27074eadcd5b09d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows more control than other playback methods, can fade out or in depending on parameter values, and also partially fade in a Timeline, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method.  <br /></td></tr>
+<tr class="memitem:ae0607cae1fafd54d57e2f0704bbbd5d6" id="r_ae0607cae1fafd54d57e2f0704bbbd5d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae0607cae1fafd54d57e2f0704bbbd5d6">FadeTo</a> (TimelineAsset timelineAsset, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null, FadeType fadeType=FadeType.FadeTo)</td></tr>
+<tr class="memdesc:ae0607cae1fafd54d57e2f0704bbbd5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows more control than other playback methods, can fade out or in depending on parameter values, and also partially fade in a Timeline, does a search for the TimelineAsset from the name passed in, and calls the Timeline as key version of the method.  <br /></td></tr>
 <tr class="memitem:ab72bdd8433706869f0b2685a58e92d1b" id="r_ab72bdd8433706869f0b2685a58e92d1b"><td class="memItemLeft"><a class="el" href="class_timeline_mixer_1_1_playable_node.html">PlayableNode</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab72bdd8433706869f0b2685a58e92d1b">GetExternalConnectionAnimationNode</a> (Animator animator)</td></tr>
 <tr class="memdesc:ab72bdd8433706869f0b2685a58e92d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the AnimationMixer node that will allow you to connect your custom animation system or other animation related playables. This is the same AnimationMixer that the AnimatorControllerPlayable connects to. Weights on this mixer are not automatically managed, except for when the AnimatorControllerPlayable is connected. You will need to change weights as needed.  <br /></td></tr>
 <tr class="memitem:ae4a16fc9411fbb312895238255023d1b" id="r_ae4a16fc9411fbb312895238255023d1b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae4a16fc9411fbb312895238255023d1b">SetTimelineEvent</a> (TimelineAsset timelineAsset, float time, Action eventCallback, NotificationFlags notificationFlags=NotificationFlags.Retroactive)</td></tr>
@@ -166,6 +166,10 @@ void&#160;</td><td class="memItemRight"><b>SetTimeSmooth</b> (TimelineAsset time
 <tr class="memdesc:a6715960e36e07e1aac7880fd6fe745f0 inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows you to rebind your timeline tracks at runtime, these changes will not show or be recorded in the PlayableDirector. Be careful with this, it is possible to bind unsupported components. Animation track bound to Audio Source for example.  <br /></td></tr>
 <tr class="memitem:ac88341ac64ad60fd096293e38d2d9b9d inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_ac88341ac64ad60fd096293e38d2d9b9d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html#ac88341ac64ad60fd096293e38d2d9b9d">RemoveTimeline</a> (string timelineName)</td></tr>
 <tr class="memdesc:ac88341ac64ad60fd096293e38d2d9b9d inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a Timeline Asset completely from Timeline Mixer. The Timeline will be stripped from the playable graph, and removed from the component list.  <br /></td></tr>
+<tr class="memitem:a19f3e246554fa1356a176a8bdcd01b2b inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_a19f3e246554fa1356a176a8bdcd01b2b"><td class="memItemLeft">ref <a class="el" href="class_timeline_callbacks.html">TimelineCallbacks</a>&#160;</td><td class="memItemRight"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html#a19f3e246554fa1356a176a8bdcd01b2b">GetTimelineCallbacks</a> (string timelineName)</td></tr>
+<tr class="memdesc:a19f3e246554fa1356a176a8bdcd01b2b inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">With the string name of a timeline, get the object containing the callbacks for this timeline.  <br /></td></tr>
+<tr class="memitem:af9ddfa37b08185df7b5c9275fd43951f inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_af9ddfa37b08185df7b5c9275fd43951f"><td class="memItemLeft">ref <a class="el" href="class_timeline_callbacks.html">TimelineCallbacks</a>&#160;</td><td class="memItemRight"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html#af9ddfa37b08185df7b5c9275fd43951f">GetTimelineCallbacks</a> (TimelineAsset timelineAsset)</td></tr>
+<tr class="memdesc:af9ddfa37b08185df7b5c9275fd43951f inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">With a TimelineAsset reference, get the object containing the callbacks for this timeline.  <br /></td></tr>
 <tr class="memitem:a18f2a80c6fd02adcf1b16b66832d83d4 inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_a18f2a80c6fd02adcf1b16b66832d83d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html#a18f2a80c6fd02adcf1b16b66832d83d4">RemoveTimeline</a> (TimelineAsset timelineAsset)</td></tr>
 <tr class="memdesc:a18f2a80c6fd02adcf1b16b66832d83d4 inherit pub_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a Timeline Asset completely from Timeline Mixer. The Timeline will be stripped from the playable graph, and removed from the component list.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -186,9 +190,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_timeline_mixer_1_1_timeline_mixer_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html">TimelineMixer.TimelineMixerBase</a></td></tr>
 <tr class="memitem:ad4528c96b4e7c8a5b6b93ea30283e817 inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_ad4528c96b4e7c8a5b6b93ea30283e817"><td class="memItemLeft">TimelineAsset&#160;</td><td class="memItemRight"><a class="el" href="class_timeline_mixer_1_1_timeline_mixer_base.html#ad4528c96b4e7c8a5b6b93ea30283e817">GetTimelineWithName</a> (string name)</td></tr>
 <tr class="memdesc:ad4528c96b4e7c8a5b6b93ea30283e817 inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a TimelineAsset with the given name, if it exists in the list.  <br /></td></tr>
-<tr class="memitem:adab9ca4d0dddf7e07e62403d0f84ac19 inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_adab9ca4d0dddf7e07e62403d0f84ac19"><td class="memItemLeft">
-void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class_timeline_mixer_1_1_binding_data.html">BindingData</a> bindingData, float targetWeight, float fadeTime=10f, float startTime=-1, int? loopPlayback=null)</td></tr>
-<tr class="memdesc:adab9ca4d0dddf7e07e62403d0f84ac19 inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback ///. <br /></td></tr>
+<tr class="memitem:aff98ffe7274aa5ef1dc72c54b24a50bc inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base" id="r_aff98ffe7274aa5ef1dc72c54b24a50bc"><td class="memItemLeft">
+void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class_timeline_mixer_1_1_binding_data.html">BindingData</a> bindingData, float targetWeight, float fadeTime=10f, float startTime=-1, int? loopMode=null, FadeType fadeType=FadeType.FadeTo)</td></tr>
+<tr class="memdesc:aff98ffe7274aa5ef1dc72c54b24a50bc inherit pro_methods_class_timeline_mixer_1_1_timeline_mixer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback ///. <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a23642f59437885829b780501216e7275" name="a23642f59437885829b780501216e7275"></a>
@@ -629,8 +633,8 @@ void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class
 
 </div>
 </div>
-<a id="a547f696d0751eeb27074eadcd5b09d6b" name="a547f696d0751eeb27074eadcd5b09d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a547f696d0751eeb27074eadcd5b09d6b">&#9670;&#160;</a></span>FadeTo() <span class="overload">[2/2]</span></h2>
+<a id="ae0607cae1fafd54d57e2f0704bbbd5d6" name="ae0607cae1fafd54d57e2f0704bbbd5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0607cae1fafd54d57e2f0704bbbd5d6">&#9670;&#160;</a></span>FadeTo() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -666,7 +670,7 @@ void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>easeOut</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+          <td class="paramtype">FadeType</td>          <td class="paramname"><span class="paramname"><em>fadeType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">FadeType::FadeTo</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -683,7 +687,7 @@ void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class
     <tr><td class="paramname">targetWeight</td><td>0 - 1 float value, allows a Timeline to be partially faded in</td></tr>
     <tr><td class="paramname">fadeTime</td><td>The duration of the fade in seconds</td></tr>
     <tr><td class="paramname">startTime</td><td>The time, relative to the timeline to start playing from. Takes effect only on the Timeline fading in. If left at the default value this parameter is ignored</td></tr>
-    <tr><td class="paramname">loopPlayback</td><td>Should the timeline loop? Takes a <a class="el" href="class_timeline_mixer_1_1_loop_mode.html" title="The purpose of this class is simply to make the LoopMode parameter more readable. You can alternative...">LoopMode</a> option</td></tr>
+    <tr><td class="paramname">loopMode</td><td>Should the timeline loop? Takes a <a class="el" href="class_timeline_mixer_1_1_loop_mode.html" title="The purpose of this class is simply to make the LoopMode parameter more readable. You can alternative...">LoopMode</a> option</td></tr>
   </table>
   </dd>
 </dl>

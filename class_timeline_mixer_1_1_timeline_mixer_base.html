@@ -136,6 +136,10 @@ void&#160;</td><td class="memItemRight"><b>SetTimeSmooth</b> (TimelineAsset time
 <tr class="memdesc:a6715960e36e07e1aac7880fd6fe745f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows you to rebind your timeline tracks at runtime, these changes will not show or be recorded in the PlayableDirector. Be careful with this, it is possible to bind unsupported components. Animation track bound to Audio Source for example.  <br /></td></tr>
 <tr class="memitem:ac88341ac64ad60fd096293e38d2d9b9d" id="r_ac88341ac64ad60fd096293e38d2d9b9d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac88341ac64ad60fd096293e38d2d9b9d">RemoveTimeline</a> (string timelineName)</td></tr>
 <tr class="memdesc:ac88341ac64ad60fd096293e38d2d9b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a Timeline Asset completely from Timeline Mixer. The Timeline will be stripped from the playable graph, and removed from the component list.  <br /></td></tr>
+<tr class="memitem:a19f3e246554fa1356a176a8bdcd01b2b" id="r_a19f3e246554fa1356a176a8bdcd01b2b"><td class="memItemLeft">ref <a class="el" href="class_timeline_callbacks.html">TimelineCallbacks</a>&#160;</td><td class="memItemRight"><a class="el" href="#a19f3e246554fa1356a176a8bdcd01b2b">GetTimelineCallbacks</a> (string timelineName)</td></tr>
+<tr class="memdesc:a19f3e246554fa1356a176a8bdcd01b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">With the string name of a timeline, get the object containing the callbacks for this timeline.  <br /></td></tr>
+<tr class="memitem:af9ddfa37b08185df7b5c9275fd43951f" id="r_af9ddfa37b08185df7b5c9275fd43951f"><td class="memItemLeft">ref <a class="el" href="class_timeline_callbacks.html">TimelineCallbacks</a>&#160;</td><td class="memItemRight"><a class="el" href="#af9ddfa37b08185df7b5c9275fd43951f">GetTimelineCallbacks</a> (TimelineAsset timelineAsset)</td></tr>
+<tr class="memdesc:af9ddfa37b08185df7b5c9275fd43951f"><td class="mdescLeft">&#160;</td><td class="mdescRight">With a TimelineAsset reference, get the object containing the callbacks for this timeline.  <br /></td></tr>
 <tr class="memitem:a18f2a80c6fd02adcf1b16b66832d83d4" id="r_a18f2a80c6fd02adcf1b16b66832d83d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a18f2a80c6fd02adcf1b16b66832d83d4">RemoveTimeline</a> (TimelineAsset timelineAsset)</td></tr>
 <tr class="memdesc:a18f2a80c6fd02adcf1b16b66832d83d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a Timeline Asset completely from Timeline Mixer. The Timeline will be stripped from the playable graph, and removed from the component list.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -143,9 +147,9 @@ void&#160;</td><td class="memItemRight"><b>SetTimeSmooth</b> (TimelineAsset time
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad4528c96b4e7c8a5b6b93ea30283e817" id="r_ad4528c96b4e7c8a5b6b93ea30283e817"><td class="memItemLeft">TimelineAsset&#160;</td><td class="memItemRight"><a class="el" href="#ad4528c96b4e7c8a5b6b93ea30283e817">GetTimelineWithName</a> (string name)</td></tr>
 <tr class="memdesc:ad4528c96b4e7c8a5b6b93ea30283e817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a TimelineAsset with the given name, if it exists in the list.  <br /></td></tr>
-<tr class="memitem:adab9ca4d0dddf7e07e62403d0f84ac19" id="r_adab9ca4d0dddf7e07e62403d0f84ac19"><td class="memItemLeft"><a id="adab9ca4d0dddf7e07e62403d0f84ac19" name="adab9ca4d0dddf7e07e62403d0f84ac19"></a>
-void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class_timeline_mixer_1_1_binding_data.html">BindingData</a> bindingData, float targetWeight, float fadeTime=10f, float startTime=-1, int? loopPlayback=null)</td></tr>
-<tr class="memdesc:adab9ca4d0dddf7e07e62403d0f84ac19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback ///. <br /></td></tr>
+<tr class="memitem:aff98ffe7274aa5ef1dc72c54b24a50bc" id="r_aff98ffe7274aa5ef1dc72c54b24a50bc"><td class="memItemLeft"><a id="aff98ffe7274aa5ef1dc72c54b24a50bc" name="aff98ffe7274aa5ef1dc72c54b24a50bc"></a>
+void&#160;</td><td class="memItemRight"><b>FadeTo</b> (<a class="el" href="class_timeline_mixer_1_1_binding_data.html">BindingData</a> bindingData, float targetWeight, float fadeTime=10f, float startTime=-1, int? loopMode=null, FadeType fadeType=FadeType.FadeTo)</td></tr>
+<tr class="memdesc:aff98ffe7274aa5ef1dc72c54b24a50bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback ///. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -156,6 +160,74 @@ void&#160;</td><td class="memItemRight"><b>SetUpGraph</b> ()</td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This component is not intended to be used directly, <a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html">TimelineMixerComponent</a> inherits this, attach the <a class="el" href="class_timeline_mixer_1_1_timeline_mixer_component.html">TimelineMixerComponent</a> to your GameObjects. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a19f3e246554fa1356a176a8bdcd01b2b" name="a19f3e246554fa1356a176a8bdcd01b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f3e246554fa1356a176a8bdcd01b2b">&#9670;&#160;</a></span>GetTimelineCallbacks() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ref <a class="el" href="class_timeline_callbacks.html">TimelineCallbacks</a> TimelineMixer.TimelineMixerBase.GetTimelineCallbacks </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>timelineName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>With the string name of a timeline, get the object containing the callbacks for this timeline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timelineName</td><td>String name of target timeline</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af9ddfa37b08185df7b5c9275fd43951f" name="af9ddfa37b08185df7b5c9275fd43951f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ddfa37b08185df7b5c9275fd43951f">&#9670;&#160;</a></span>GetTimelineCallbacks() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ref <a class="el" href="class_timeline_callbacks.html">TimelineCallbacks</a> TimelineMixer.TimelineMixerBase.GetTimelineCallbacks </td>
+          <td>(</td>
+          <td class="paramtype">TimelineAsset</td>          <td class="paramname"><span class="paramname"><em>timelineAsset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>With a TimelineAsset reference, get the object containing the callbacks for this timeline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timelineAsset</td><td>The target timeline asset to retrieve callbacks for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ad4528c96b4e7c8a5b6b93ea30283e817" name="ad4528c96b4e7c8a5b6b93ea30283e817"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4528c96b4e7c8a5b6b93ea30283e817">&#9670;&#160;</a></span>GetTimelineWithName()</h2>
 

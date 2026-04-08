@@ -15,6 +15,8 @@ var annotated_dup =
       [ "PassthroughPlayable", "class_timeline_mixer_1_1_passthrough_playable.html", null ],
       [ "PlayableNode", "class_timeline_mixer_1_1_playable_node.html", "class_timeline_mixer_1_1_playable_node" ],
       [ "TimelineMixerPlayable", "class_timeline_mixer_1_1_timeline_mixer_playable.html", "class_timeline_mixer_1_1_timeline_mixer_playable" ],
+      [ "FadeIn", "class_timeline_mixer_1_1_fade_in.html", "class_timeline_mixer_1_1_fade_in" ],
+      [ "FadeOut", "class_timeline_mixer_1_1_fade_out.html", "class_timeline_mixer_1_1_fade_out" ],
       [ "FadeState", "class_timeline_mixer_1_1_fade_state.html", null ],
       [ "FadeTo", "class_timeline_mixer_1_1_fade_to.html", null ],
       [ "TimelineEventData", "class_timeline_mixer_1_1_timeline_event_data.html", null ],
@@ -30,5 +32,6 @@ var annotated_dup =
       [ "TrackProcessorManager", "class_timeline_mixer_1_1_track_processor_manager.html", "class_timeline_mixer_1_1_track_processor_manager" ],
       [ "LoopMode", "class_timeline_mixer_1_1_loop_mode.html", null ],
       [ "TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", "class_timeline_mixer_1_1_timeline_mixer_utilities" ]
-    ] ]
+    ] ],
+    [ "TimelineCallbacks", "class_timeline_callbacks.html", null ]
 ];

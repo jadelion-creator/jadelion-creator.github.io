@@ -8,6 +8,7 @@ var searchData=
   ['getorcreateconnectioninfo_5',['GetOrCreateConnectionInfo',['../class_timeline_mixer_1_1_timeline_mixer_utilities.html#ab9dc060e00bef4d712092c544c28fa25',1,'TimelineMixer::TimelineMixerUtilities']]],
   ['getoutputcount_6',['GetOutputCount',['../class_timeline_mixer_1_1_playable_node.html#ac3e11fde466def26464b32a57fb8ed27',1,'TimelineMixer::PlayableNode']]],
   ['getplayable_7',['GetPlayable',['../class_timeline_mixer_1_1_playable_node.html#a471e740edc4fb000ead42bafb2762dd7',1,'TimelineMixer::PlayableNode']]],
-  ['gettimelinewithname_8',['GetTimelineWithName',['../class_timeline_mixer_1_1_timeline_mixer_base.html#ad4528c96b4e7c8a5b6b93ea30283e817',1,'TimelineMixer::TimelineMixerBase']]],
-  ['gettrackport_9',['GetTrackPort',['../class_timeline_mixer_1_1_playable_node.html#ae0f1e129d263ee44e750c244f098ed58',1,'TimelineMixer::PlayableNode']]]
+  ['gettimelinecallbacks_8',['GetTimelineCallbacks',['../class_timeline_mixer_1_1_timeline_mixer_base.html#a19f3e246554fa1356a176a8bdcd01b2b',1,'TimelineMixer.TimelineMixerBase.GetTimelineCallbacks(string timelineName)'],['../class_timeline_mixer_1_1_timeline_mixer_base.html#af9ddfa37b08185df7b5c9275fd43951f',1,'TimelineMixer.TimelineMixerBase.GetTimelineCallbacks(TimelineAsset timelineAsset)']]],
+  ['gettimelinewithname_9',['GetTimelineWithName',['../class_timeline_mixer_1_1_timeline_mixer_base.html#ad4528c96b4e7c8a5b6b93ea30283e817',1,'TimelineMixer::TimelineMixerBase']]],
+  ['gettrackport_10',['GetTrackPort',['../class_timeline_mixer_1_1_playable_node.html#ae0f1e129d263ee44e750c244f098ed58',1,'TimelineMixer::PlayableNode']]]
 ];

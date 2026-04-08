@@ -13,7 +13,10 @@ var hierarchy =
     ] ],
     [ "TimelineMixer.EventVariable&lt; T &gt;", "class_timeline_mixer_1_1_event_variable-1-g.html", null ],
     [ "TimelineMixer.FadeState", "class_timeline_mixer_1_1_fade_state.html", [
-      [ "TimelineMixer.FadeTo", "class_timeline_mixer_1_1_fade_to.html", null ]
+      [ "TimelineMixer.FadeTo", "class_timeline_mixer_1_1_fade_to.html", [
+        [ "TimelineMixer.FadeIn", "class_timeline_mixer_1_1_fade_in.html", null ],
+        [ "TimelineMixer.FadeOut", "class_timeline_mixer_1_1_fade_out.html", null ]
+      ] ]
     ] ],
     [ "INotification", null, [
       [ "TimelineMixer.TimelineEventNotification", "class_timeline_mixer_1_1_timeline_event_notification.html", null ]
@@ -43,6 +46,7 @@ var hierarchy =
     [ "TimelineMixer.PlayableNode", "class_timeline_mixer_1_1_playable_node.html", null ],
     [ "TimelineMixer.Editor.ResizeList", "class_timeline_mixer_1_1_editor_1_1_resize_list.html", null ],
     [ "TimelineMixer.Editor.SimpleEditorUtilities", "class_timeline_mixer_1_1_editor_1_1_simple_editor_utilities.html", null ],
+    [ "TimelineCallbacks", "class_timeline_callbacks.html", null ],
     [ "TimelineMixer.TimelineEventData", "class_timeline_mixer_1_1_timeline_event_data.html", null ],
     [ "TimelineMixer.TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", null ],
     [ "TimelineMixer.TrackProcessorManager", "class_timeline_mixer_1_1_track_processor_manager.html", null ]
