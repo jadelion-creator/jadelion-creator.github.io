@@ -103,6 +103,10 @@ $(function(){initNavTree('callbacks.html','',''); });
 <div class="contents">
 <div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 Timeline-based callbacks</h1>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+Why is there no OnComplete?:</h3>
+<p>Timeline Mixer does not define a universal ‘completion’ condition for timelines. Timelines can be played in reverse, looped, and played beyond their duration (animation extrapolation), this makes a single, reliable definition of ‘complete’ impossible.</p>
+<p>Instead, it provides low-level callbacks (fade and timeline events) that can be composed to match your specific definition of completion.</p>
 <p>Callbacks can be added to a Timeline at runtime using SetTimelineEvent: </p><div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;();</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">float</span> eventTime = 2f; <span class="comment">// 2 seconds</span></div>
@@ -116,10 +120,7 @@ Timeline-based callbacks</h1>
 <div class="line">        Debug.Log($<span class="stringliteral">&quot;{timelineAsset.name} Event Fired!&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line">);</div>
-<div class="line"> </div>
-<div class="line">Alternatively:</div>
-<div class="line"> </div>
-<div class="line">Action callback = () =&gt;</div>
+</div><!-- fragment --><p>Alternatively: </p><div class="fragment"><div class="line">Action callback = () =&gt;</div>
 <div class="line">{</div>
 <div class="line">    timelineMixer.FadeOut(timelineAsset, 2f);</div>
 <div class="line">    Debug.Log($<span class="stringliteral">&quot;{timelineAsset.name} Event Fired!&quot;</span>);</div>
@@ -127,7 +128,7 @@ Timeline-based callbacks</h1>
 <div class="line"> </div>
 <div class="line">timelineMixer.SetTimelineEvent(timelineAsset, eventTime, callback);</div>
 </div><!-- fragment --><p> This registers a callback that will fire when the Timeline reaches the specified time.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
 Notes</h2>
 <ul>
 <li>Events are evaluated against the Timeline's playback time.</li>
@@ -135,15 +136,15 @@ Notes</h2>
 <li>Events cannot currently be removed individually.</li>
 </ul>
 <p>To clear all events on a Timeline: </p><div class="fragment"><div class="line">timelineMixer.ClearTimelineEvents(timelineAsset);</div>
-</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
 Fade-based callbacks</h2>
 <p>Fade callbacks are stored per Timeline and can be accessed via: </p><div class="fragment"><div class="line"><span class="comment">// By timeline name</span></div>
 <div class="line">timelineMixerComponent.GetTimelineCallbacks(<span class="stringliteral">&quot;Happy&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// By TimelineAsset reference</span></div>
 <div class="line">timelineMixerComponent.GetTimelineCallbacks(timelineAsset);</div>
-</div><!-- fragment --><p> These callbacks persist for the lifetime of the Timeline.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+</div><!-- fragment --><p> These callbacks persist for as long as the Timeline is registered within the Timeline Mixer. If the Timeline is removed at runtime, all runtime information related to the timeline, including these callbacks, will be destroyed. </p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
 Subscribing to callbacks</h2>
 <div class="fragment"><div class="line"><a class="code hl_class" href="class_timeline_callbacks.html">TimelineCallbacks</a> callbacks = timelineMixerComponent.GetTimelineCallbacks(<span class="stringliteral">&quot;Happy&quot;</span>);</div>
 <div class="line"> </div>
@@ -156,7 +157,7 @@ Subscribing to callbacks</h2>
 <div class="line">callbacks.onFadeInComplete += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE IN COMPLETE&quot;</span>);</div>
 <div class="line">callbacks.onFadeOutComplete += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE OUT COMPLETE&quot;</span>);</div>
 <div class="ttc" id="aclass_timeline_callbacks_html"><div class="ttname"><a href="class_timeline_callbacks.html">TimelineCallbacks</a></div><div class="ttdef"><b>Definition</b> TimelineCallbacks.cs:3</div></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
 Callback descriptions</h2>
 <ul>
 <li><b>onFadeInStart / onFadeOutStart</b>: Invoked when a fade begins.</li>
