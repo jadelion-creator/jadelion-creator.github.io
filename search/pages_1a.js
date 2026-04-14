@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['💡_20feedback_20and_20suggestions_0',['💡 Feedback and suggestions',['../contact.html#autotoc_md20',1,'']]]
+  ['❤_0',['😁 Working on something cool? I&apos;d love to hear about it! ❤',['../contact.html#autotoc_md28',1,'']]]
 ];

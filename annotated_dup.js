@@ -10,6 +10,7 @@ var annotated_dup =
       [ "AnimationBalancer", "class_timeline_mixer_1_1_animation_balancer.html", "class_timeline_mixer_1_1_animation_balancer" ],
       [ "BindingData", "class_timeline_mixer_1_1_binding_data.html", null ],
       [ "EventVariable&lt; T &gt;", "class_timeline_mixer_1_1_event_variable-1-g.html", null ],
+      [ "FadeEvents", "class_timeline_mixer_1_1_fade_events.html", null ],
       [ "PlayableConnectionInfo", "class_timeline_mixer_1_1_playable_connection_info.html", null ],
       [ "TimelineEventNotification", "class_timeline_mixer_1_1_timeline_event_notification.html", null ],
       [ "PassthroughPlayable", "class_timeline_mixer_1_1_passthrough_playable.html", null ],
@@ -32,6 +33,5 @@ var annotated_dup =
       [ "TrackProcessorManager", "class_timeline_mixer_1_1_track_processor_manager.html", "class_timeline_mixer_1_1_track_processor_manager" ],
       [ "LoopMode", "class_timeline_mixer_1_1_loop_mode.html", null ],
       [ "TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", "class_timeline_mixer_1_1_timeline_mixer_utilities" ]
-    ] ],
-    [ "TimelineCallbacks", "class_timeline_callbacks.html", null ]
+    ] ]
 ];

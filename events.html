@@ -14,7 +14,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Timeline Mixer Documentation: Runtime Events</title>
+<title>Timeline Mixer Documentation: Fade Events and Timeline Events</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,29 +98,75 @@ $(function(){initNavTree('events.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Runtime Events </div></div>
+  <div class="headertitle"><div class="title">Fade Events and Timeline Events </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Events can be added to Timelines at runtime through the SetTimelineEvent method:</p>
-<div class="fragment"><div class="line"> cs</div>
-<div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;()</div>
+<div class="textblock"><h3 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+Why is there no OnComplete event?:</h3>
+<p>Timeline Mixer does not define a universal ‘completion’ condition for timelines. Timelines can be played in reverse, looped, and played beyond their duration (animation extrapolation), this makes a single, reliable definition of ‘complete’ impossible.</p>
+<p>Instead, it provides callbacks (fade and timeline events) that can be composed to match your specific definition of completion, whether that is duration reached, beginning reached, or faded out, or another condition.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+Timeline based events</h2>
+<p>Callbacks can be added to a Timeline at a specified time using SetTimelineEvent: </p><div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;();</div>
 <div class="line"> </div>
-<div class="line">float eventTime = 2f; //2 seconds</div>
+<div class="line"><span class="keywordtype">float</span> eventTime = 2f; <span class="comment">// 2 seconds</span></div>
 <div class="line"> </div>
-<div class="line">timelineMixer.SetTimelineEvent(timelineAsset, eventTime, () =&gt; { timelineMixer.FadeOut(timelineAsset, 2f); Debug.Log($&quot;{timelineAsset.name} Event Fired!&quot;); });</div>
-<div class="line"> </div>
-<div class="line">//OR</div>
-<div class="line"> </div>
-<div class="line">Action callback;</div>
-<div class="line">callback = () =&gt; { timelineMixer.FadeOut(timelineAsset, 2f); Debug.Log($&quot;{timelineAsset.name} Event Fired!&quot;); };</div>
+<div class="line">timelineMixer.SetTimelineEvent(</div>
+<div class="line">    timelineAsset,</div>
+<div class="line">    eventTime,</div>
+<div class="line">    () =&gt;</div>
+<div class="line">    {</div>
+<div class="line">        timelineMixer.FadeOut(timelineAsset, 2f);</div>
+<div class="line">        Debug.Log($<span class="stringliteral">&quot;{timelineAsset.name} Event Fired!&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">);</div>
+</div><!-- fragment --><p>Alternatively: </p><div class="fragment"><div class="line">Action callback = () =&gt;</div>
+<div class="line">{</div>
+<div class="line">    timelineMixer.FadeOut(timelineAsset, 2f);</div>
+<div class="line">    Debug.Log($<span class="stringliteral">&quot;{timelineAsset.name} Event Fired!&quot;</span>);</div>
+<div class="line">};</div>
 <div class="line"> </div>
 <div class="line">timelineMixer.SetTimelineEvent(timelineAsset, eventTime, callback);</div>
-</div><!-- fragment --><p>This sets an event on the timeline at the 2 second mark, which will launch the callback passed in when creating the event.</p>
-<p>It is not possible to remove individual events at this time, events can be cleared however:</p>
-<div class="fragment"><div class="line"> cs</div>
+</div><!-- fragment --><p> This registers a callback that will fire when the Timeline reaches the specified time.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+Notes</h2>
+<ul>
+<li>Events are evaluated against the Timeline's playback time.</li>
+<li>If the Timeline loops, events will fire again on subsequent loops.</li>
+<li>Events cannot currently be removed individually.</li>
+</ul>
+<p>To clear all events on a Timeline: </p><div class="fragment"><div class="line">timelineMixer.ClearTimelineEvents(timelineAsset);</div>
+</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+Fade-based events</h2>
+<p>Fade events are stored per Timeline and can be accessed via: </p><div class="fragment"><div class="line"><span class="comment">// By timeline name</span></div>
+<div class="line">timelineMixerComponent.GetFadeEvents(<span class="stringliteral">&quot;Happy&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">timelineMixer.ClearTimelineEvents(timelineAsset);</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<div class="line"><span class="comment">// By TimelineAsset reference</span></div>
+<div class="line">timelineMixerComponent.GetFadeEvents(timelineAsset);</div>
+</div><!-- fragment --><p> These callbacks persist for as long as the Timeline is registered within the Timeline Mixer. If the Timeline is removed at runtime, all runtime information related to the timeline, including these callbacks, will be destroyed. </p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+Subscribing to events</h2>
+<div class="fragment"><div class="line">var events = timelineMixerComponent.GetFadeEvents(<span class="stringliteral">&quot;Happy&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">events.OnFadeInStart += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE IN START&quot;</span>);</div>
+<div class="line">events.OnFadeOutStart += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE OUT START&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">events.OnFadeUpdate += (progress, weight) =&gt;</div>
+<div class="line">    Debug.Log(progress + <span class="stringliteral">&quot;   &quot;</span> + weight);</div>
+<div class="line"> </div>
+<div class="line">events.OnFadeInComplete += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE IN COMPLETE&quot;</span>);</div>
+<div class="line">events.OnFadeOutComplete += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE OUT COMPLETE&quot;</span>);</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+Callback descriptions</h2>
+<ul>
+<li><b>OnFadeInStart / OnFadeOutStart</b>: Invoked when a fade begins.</li>
+<li><b>OnFadeUpdate:</b> Invoked every frame while a fade is in progress. Provides: progress (0 → 1) weight (0 → 1)</li>
+<li><b>OnFadeInComplete / OnFadeOutComplete:</b> Invoked when the fade reaches its target weight.</li>
+</ul>
+<blockquote class="doxtable">
+<p>Calling the Play method is considered a FadeIn, with a fade duration of 0 seconds. Play will fire OnFadeInStart, OnFadeUpdate (once), and OnFadeInComplete </p>
+</blockquote>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 </div><!-- container -->

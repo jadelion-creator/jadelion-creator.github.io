@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['😁_20working_20on_20something_20cool_20i_20d_20love_20to_20hear_20about_20it_20❤_0',['😁 Working on something cool? I&apos;d love to hear about it! ❤',['../contact.html#autotoc_md22',1,'']]]
+  ['💡_20feedback_20and_20suggestions_0',['💡 Feedback and suggestions',['../contact.html#autotoc_md26',1,'']]]
 ];

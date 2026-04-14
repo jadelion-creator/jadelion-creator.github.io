@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['on_20something_20cool_20i_20d_20love_20to_20hear_20about_20it_20❤_0',['😁 Working on something cool? I&apos;d love to hear about it! ❤',['../contact.html#autotoc_md22',1,'']]],
-  ['or_20have_20a_20feature_20request_1',['Found a Bug or Have a Feature Request?',['../contact.html',1,'']]]
+  ['mixer_20documentation_0',['Timeline Mixer Documentation',['../index.html',1,'']]],
+  ['mixer_20window_1',['Timeline Mixer Window',['../tm_window.html',1,'']]],
+  ['mode_2',['Mode',['../modes.html#autotoc_md9',1,'Animation Unsafe Mode'],['../tm_window.html#autotoc_md4',1,'Loop Mode'],['../modes.html#autotoc_md7',1,'Multiple Mode'],['../modes.html#autotoc_md8',1,'Solo Mode']]],
+  ['modes_3',['Modes',['../modes.html',1,'']]],
+  ['multiple_20mode_4',['Multiple Mode',['../modes.html#autotoc_md7',1,'']]]
 ];

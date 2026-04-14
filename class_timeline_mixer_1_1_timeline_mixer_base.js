@@ -2,8 +2,8 @@ var class_timeline_mixer_1_1_timeline_mixer_base =
 [
     [ "Mode", "class_timeline_mixer_1_1_timeline_mixer_base.html#a37eff646927b4931cc127d79aee3e1b6", null ],
     [ "FadeTo", "class_timeline_mixer_1_1_timeline_mixer_base.html#aff98ffe7274aa5ef1dc72c54b24a50bc", null ],
-    [ "GetTimelineCallbacks", "class_timeline_mixer_1_1_timeline_mixer_base.html#a19f3e246554fa1356a176a8bdcd01b2b", null ],
-    [ "GetTimelineCallbacks", "class_timeline_mixer_1_1_timeline_mixer_base.html#af9ddfa37b08185df7b5c9275fd43951f", null ],
+    [ "GetFadeEvents", "class_timeline_mixer_1_1_timeline_mixer_base.html#a26bedb367813c64dc426b6482b2261eb", null ],
+    [ "GetFadeEvents", "class_timeline_mixer_1_1_timeline_mixer_base.html#a73ba687eaa36e5a2325f58efbb3ba3d3", null ],
     [ "GetTimelineWithName", "class_timeline_mixer_1_1_timeline_mixer_base.html#ad4528c96b4e7c8a5b6b93ea30283e817", null ],
     [ "RebindTrack", "class_timeline_mixer_1_1_timeline_mixer_base.html#a6715960e36e07e1aac7880fd6fe745f0", null ],
     [ "RemoveTimeline", "class_timeline_mixer_1_1_timeline_mixer_base.html#ac88341ac64ad60fd096293e38d2d9b9d", null ],

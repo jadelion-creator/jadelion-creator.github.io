@@ -29,7 +29,7 @@ var NAVTREE =
     [ "Timeline Mixer Window", "tm_window.html", null ],
     [ "Modes", "modes.html", null ],
     [ "Animator Controllers", "animator.html", null ],
-    [ "Runtime Events", "events.html", null ],
+    [ "Fade Events and Timeline Events", "events.html", null ],
     [ "Rebinding Tracks at Runtime", "rebinding.html", null ],
     [ "Adding and Removing Timelines at Runtime", "add_at_runtime.html", null ],
     [ "Track Processors", "processors.html", null ],

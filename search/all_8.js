@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['get_20started_0',['Get Started',['../index.html#autotoc_md27',1,'']]],
-  ['getconnectedinputcount_1',['GetConnectedInputCount',['../class_timeline_mixer_1_1_playable_node.html#ad609171bc1cbf0a7bc36f78f4ed1d89d',1,'TimelineMixer::PlayableNode']]],
-  ['getexternalconnectionanimationnode_2',['GetExternalConnectionAnimationNode',['../class_timeline_mixer_1_1_timeline_mixer_component.html#ab72bdd8433706869f0b2685a58e92d1b',1,'TimelineMixer::TimelineMixerComponent']]],
-  ['getexternalsystemmixernode_3',['GetExternalSystemMixerNode',['../class_timeline_mixer_1_1_animation_track_processor.html#ab2140a6c459ab024aa1c1b2155cc19c0',1,'TimelineMixer::AnimationTrackProcessor']]],
-  ['getinputweight_4',['GetInputWeight',['../class_timeline_mixer_1_1_playable_node.html#aaa16fd5eb7895d7c75675d828ad195b6',1,'TimelineMixer::PlayableNode']]],
-  ['getlistconnectedinputs_5',['GetListConnectedInputs',['../class_timeline_mixer_1_1_playable_node.html#a6d42209ae10762f228fe1a6a0ad42d1c',1,'TimelineMixer::PlayableNode']]],
-  ['getorcreateconnectioninfo_6',['GetOrCreateConnectionInfo',['../class_timeline_mixer_1_1_timeline_mixer_utilities.html#ab9dc060e00bef4d712092c544c28fa25',1,'TimelineMixer::TimelineMixerUtilities']]],
-  ['getoutputcount_7',['GetOutputCount',['../class_timeline_mixer_1_1_playable_node.html#ac3e11fde466def26464b32a57fb8ed27',1,'TimelineMixer::PlayableNode']]],
-  ['getplayable_8',['GetPlayable',['../class_timeline_mixer_1_1_playable_node.html#a471e740edc4fb000ead42bafb2762dd7',1,'TimelineMixer::PlayableNode']]],
-  ['gettimelinecallbacks_9',['GetTimelineCallbacks',['../class_timeline_mixer_1_1_timeline_mixer_base.html#a19f3e246554fa1356a176a8bdcd01b2b',1,'TimelineMixer.TimelineMixerBase.GetTimelineCallbacks(string timelineName)'],['../class_timeline_mixer_1_1_timeline_mixer_base.html#af9ddfa37b08185df7b5c9275fd43951f',1,'TimelineMixer.TimelineMixerBase.GetTimelineCallbacks(TimelineAsset timelineAsset)']]],
-  ['gettimelinewithname_10',['GetTimelineWithName',['../class_timeline_mixer_1_1_timeline_mixer_base.html#ad4528c96b4e7c8a5b6b93ea30283e817',1,'TimelineMixer::TimelineMixerBase']]],
-  ['getting_20started_11',['Getting Started',['../getting_started.html',1,'']]],
-  ['gettrackport_12',['GetTrackPort',['../class_timeline_mixer_1_1_playable_node.html#ae0f1e129d263ee44e750c244f098ed58',1,'TimelineMixer::PlayableNode']]]
+  ['fade_20based_20events_0',['Fade-based events',['../events.html#autotoc_md14',1,'']]],
+  ['fade_20events_20and_20timeline_20events_1',['Fade Events and Timeline Events',['../events.html',1,'']]],
+  ['fadeevents_2',['FadeEvents',['../class_timeline_mixer_1_1_fade_events.html',1,'TimelineMixer']]],
+  ['fadein_3',['FadeIn',['../class_timeline_mixer_1_1_fade_in.html',1,'TimelineMixer.FadeIn'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#a45fab89a697c870148c8595586f24433',1,'TimelineMixer.TimelineMixerComponent.FadeIn(string timelineAssetName, float fadeTime=1f, float startTime=-1f, int? loopMode=null)'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#ad5fda6c3c895b4f228d1c93a034df3fe',1,'TimelineMixer.TimelineMixerComponent.FadeIn(TimelineAsset timelineAsset, float fadeTime=1f, float startTime=-1f, int? loopMode=null)']]],
+  ['fadeout_4',['FadeOut',['../class_timeline_mixer_1_1_fade_out.html',1,'TimelineMixer.FadeOut'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#af2a3a3286f2294761191d5a8ffd09c7c',1,'TimelineMixer.TimelineMixerComponent.FadeOut(string timelineAssetName, float fadeTime=1f)'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#a320e6bfd0f5ec1db00944b2781f376e3',1,'TimelineMixer.TimelineMixerComponent.FadeOut(TimelineAsset timelineAsset, float fadeTime=1f)']]],
+  ['fadestate_5',['FadeState',['../class_timeline_mixer_1_1_fade_state.html',1,'TimelineMixer']]],
+  ['fadeto_6',['FadeTo',['../class_timeline_mixer_1_1_fade_to.html',1,'TimelineMixer.FadeTo'],['../class_timeline_mixer_1_1_timeline_mixer_base.html#aff98ffe7274aa5ef1dc72c54b24a50bc',1,'TimelineMixer.TimelineMixerBase.FadeTo()'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#a541773325a92504b854cfb3be070e90b',1,'TimelineMixer.TimelineMixerComponent.FadeTo(string timelineAssetName, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null)'],['../class_timeline_mixer_1_1_timeline_mixer_component.html#ae0607cae1fafd54d57e2f0704bbbd5d6',1,'TimelineMixer.TimelineMixerComponent.FadeTo(TimelineAsset timelineAsset, float targetWeight, float fadeTime=1f, float startTime=-1, int? loopMode=null, FadeType fadeType=FadeType.FadeTo)']]],
+  ['fast_20forward_20rewind_7',['Fast Forward / Rewind',['../getting_started.html#autotoc_md3',1,'']]],
+  ['feature_20request_8',['Found a Bug or Have a Feature Request?',['../contact.html',1,'']]],
+  ['features_9',['Key Features',['../index.html#autotoc_md32',1,'']]],
+  ['features_10',['❓ Questions about features',['../contact.html#autotoc_md27',1,'']]],
+  ['feedback_20and_20suggestions_11',['💡 Feedback and suggestions',['../contact.html#autotoc_md26',1,'']]],
+  ['forward_20rewind_12',['Fast Forward / Rewind',['../getting_started.html#autotoc_md3',1,'']]],
+  ['found_20a_20bug_20or_20have_20a_20feature_20request_13',['Found a Bug or Have a Feature Request?',['../contact.html',1,'']]],
+  ['fraud_14',['🚫 Spam &amp;amp; Fraud',['../contact.html#autotoc_md30',1,'']]]
 ];

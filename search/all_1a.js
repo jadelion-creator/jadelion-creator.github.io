@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🎟️_20access_20requests_0',['🎟️ Access Requests',['../contact.html#autotoc_md23',1,'']]]
+  ['❤_0',['😁 Working on something cool? I&apos;d love to hear about it! ❤',['../contact.html#autotoc_md28',1,'']]]
 ];

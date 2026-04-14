@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['❤_0',['😁 Working on something cool? I&apos;d love to hear about it! ❤',['../contact.html#autotoc_md22',1,'']]]
+  ['❓_20questions_20about_20features_0',['❓ Questions about features',['../contact.html#autotoc_md27',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📫_20contact_20policy_0',['📫 Contact Policy',['../contact.html#autotoc_md19',1,'']]]
+  ['💡_20feedback_20and_20suggestions_0',['💡 Feedback and suggestions',['../contact.html#autotoc_md26',1,'']]]
 ];
