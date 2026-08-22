@@ -34,7 +34,7 @@ var NAVTREE =
     [ "Adding and Removing Timelines at Runtime", "add_at_runtime.html", null ],
     [ "Track Processors", "processors.html", null ],
     [ "Integrations", "integrations.html", "integrations" ],
-    [ "Found a Bug or Have a Feature Request?", "contact.html", null ],
+    [ "Contact, bugs and feature requests", "contact.html", null ],
     [ "Third Party Compatibility", "third_party.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
