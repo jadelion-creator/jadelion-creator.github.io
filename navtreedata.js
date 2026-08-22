@@ -35,6 +35,7 @@ var NAVTREE =
     [ "Track Processors", "processors.html", null ],
     [ "Integrations", "integrations.html", "integrations" ],
     [ "Found a Bug or Have a Feature Request?", "contact.html", null ],
+    [ "Third Party Compatibility", "third_party.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

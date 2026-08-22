@@ -128,15 +128,14 @@ Timeline based events</h2>
 <div class="line"> </div>
 <div class="line">timelineMixer.SetTimelineEvent(timelineAsset, eventTime, callback);</div>
 </div><!-- fragment --><p> This registers a callback that will fire when the Timeline reaches the specified time.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
-Notes</h2>
-<ul>
+<dl class="section note"><dt>Note</dt><dd><ul>
 <li>Events are evaluated against the Timeline's playback time.</li>
 <li>If the Timeline loops, events will fire again on subsequent loops.</li>
 <li>Events cannot currently be removed individually.</li>
 </ul>
+</dd></dl>
 <p>To clear all events on a Timeline: </p><div class="fragment"><div class="line">timelineMixer.ClearTimelineEvents(timelineAsset);</div>
-</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 Fade-based events</h2>
 <p>Fade events are stored per Timeline and can be accessed via: </p><div class="fragment"><div class="line"><span class="comment">// By timeline name</span></div>
 <div class="line">timelineMixerComponent.GetFadeEvents(<span class="stringliteral">&quot;Happy&quot;</span>);</div>
@@ -144,7 +143,7 @@ Fade-based events</h2>
 <div class="line"><span class="comment">// By TimelineAsset reference</span></div>
 <div class="line">timelineMixerComponent.GetFadeEvents(timelineAsset);</div>
 </div><!-- fragment --><p> These callbacks persist for as long as the Timeline is registered within the Timeline Mixer. If the Timeline is removed at runtime, all runtime information related to the timeline, including these callbacks, will be destroyed. </p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Subscribing to events</h2>
 <div class="fragment"><div class="line">var events = timelineMixerComponent.GetFadeEvents(<span class="stringliteral">&quot;Happy&quot;</span>);</div>
 <div class="line"> </div>
@@ -156,16 +155,14 @@ Subscribing to events</h2>
 <div class="line"> </div>
 <div class="line">events.OnFadeInComplete += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE IN COMPLETE&quot;</span>);</div>
 <div class="line">events.OnFadeOutComplete += () =&gt; Debug.Log(<span class="stringliteral">&quot;FADE OUT COMPLETE&quot;</span>);</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 Callback descriptions</h2>
 <ul>
 <li><b>OnFadeInStart / OnFadeOutStart</b>: Invoked when a fade begins.</li>
 <li><b>OnFadeUpdate:</b> Invoked every frame while a fade is in progress. Provides: progress (0 → 1) weight (0 → 1)</li>
 <li><b>OnFadeInComplete / OnFadeOutComplete:</b> Invoked when the fade reaches its target weight.</li>
 </ul>
-<blockquote class="doxtable">
-<p>Calling the Play method is considered a FadeIn, with a fade duration of 0 seconds. Play will fire OnFadeInStart, OnFadeUpdate (once), and OnFadeInComplete </p>
-</blockquote>
+<dl class="section important"><dt>Important</dt><dd>Calling the Play method is considered a FadeIn with a fade duration of 0 seconds. Play will fire OnFadeInStart, OnFadeUpdate (once), and OnFadeInComplete </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

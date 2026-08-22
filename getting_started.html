@@ -145,7 +145,7 @@ Playback at Runtime</h2>
 <div class="line"> </div>
 <div class="line">timelineMixer.Crossfade(TimelineAsset fadeInAsset, TimelineAsset fadeOutAsset, <span class="keywordtype">float</span> fadeTime = 1f, <span class="keywordtype">float</span> startTime = -1f);</div>
 <div class="line"> </div>
-<div class="line">timelineMixer.FadeTo(TimelineAsset timelineAsset, <span class="keywordtype">float</span> targetWeight, <span class="keywordtype">float</span> fadeTime = 1f, <span class="keywordtype">float</span> startTime = -1, <span class="keywordtype">int</span>? loopMode = <span class="keyword">null</span>, <span class="keywordtype">float</span> easeOut = -1);</div>
+<div class="line">timelineMixer.FadeTo(TimelineAsset timelineAsset, <span class="keywordtype">float</span> targetWeight, <span class="keywordtype">float</span> fadeTime = 1f, <span class="keywordtype">float</span> startTime = -1, <span class="keywordtype">int</span>? loopMode = <span class="keyword">null</span>);</div>
 </div><!-- fragment --><ul>
 <li><span class="tt">timelineAsset</span>: The Unity Timeline to play.</li>
 <li><span class="tt">startTime</span>: The timeline time to start playback from. If set to -1 the parameter is ignored.</li>
@@ -153,10 +153,8 @@ Playback at Runtime</h2>
 <li><span class="tt">targetWeight</span>: Unique to the FadeTo method, float 0 - 1, indicates the target strength of the timeline. Partial fades.</li>
 <li><span class="tt">loopPlayback</span>: Can be null, or equal to <span class="tt">LoopMode.loop</span> or <span class="tt">LoopMode.Endless</span>.</li>
 </ul>
-<blockquote class="doxtable">
-<p><span class="tt">LoopMode.loop</span> will cause the Timeline to loop back to its start time once it exceeds its duration.</p>
-<p><span class="tt">LoopMode.Endless</span> will attempt to keep the timeline running beyond its duration, which can be useful with AnimationClips that have Post-Extrapolate set to Continue. </p>
-</blockquote>
+<dl class="section note"><dt>Note</dt><dd><b>LoopMode.loop</b> will cause the Timeline to loop back to its start time once it exceeds its duration. <br  />
+<b>LoopMode.Endless</b> will attempt to keep the timeline running beyond its duration, which can be useful with AnimationClips that have Post-Extrapolate set to Continue.</dd></dl>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 Fast Forward / Rewind</h2>
 <p>Timeline Mixer has the ability to set the speed and the current time of a timeline. If the speed is set to a negative value, the timeline will play in reverse.</p>
@@ -165,10 +163,7 @@ Fast Forward / Rewind</h2>
 <div class="line">timelineMixer.SetTime(TimelineAsset timelineAsset, <span class="keywordtype">float</span> time);</div>
 </div><!-- fragment --><p>If you need to smoothly reach a specific time in a timeline, you can use the <span class="tt">SetTimeSmooth</span> method. This moves the current time to your target time over the duration passed in. You can pass in an animation curve to control easing.</p>
 <div class="fragment"><div class="line">timelineMixer.SetTimeSmooth(TimelineAsset timelineAsset, <span class="keywordtype">float</span> targetTime, <span class="keywordtype">float</span> duration, AnimationCurve curve = <span class="keyword">null</span>, <span class="keywordtype">bool</span> pauseOnEnd = <span class="keyword">false</span>);</div>
-</div><!-- fragment --><blockquote class="doxtable">
-<p><span class="tt">SetTimeSmooth</span> should be called once; do not call it every frame.</p>
-<p>If <span class="tt">pauseOnEnd</span> is set to true, once the timeline reaches the target time, it will be paused. </p>
-</blockquote>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd><b>SetTimeSmooth</b> should be called once; do not call it every frame. If <b>pauseOnEnd</b> is set to true, once the timeline reaches the target time, it will be paused. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

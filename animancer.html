@@ -101,7 +101,7 @@ $(function(){initNavTree('animancer.html','',''); });
   <div class="headertitle"><div class="title">Animancer </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 Animancer version 8.1 and up</h2>
 <p>Timeline Mixer integrates with Animancer, the minimum version of Animancer that is currently supported is 8.1</p>
 <p>To get started using Animancer and Timeline Mixer together, the support UnityPackage will need to be installed. Navigate to Assets -&gt; <a class="el" href="namespace_timeline_mixer.html">TimelineMixer</a> -&gt; Scripts -&gt; Integrations</p>
@@ -117,12 +117,9 @@ Animancer version 8.1 and up</h2>
 <div class="line">float weight = 1f;</div>
 <div class="line"> </div>
 <div class="line">TimelineMixerAnimancerUtilities.InitializeAnimancer(timelineMixerComponent, animancerComponent, weight, muteOtherConnections);</div>
-</div><!-- fragment --><blockquote class="doxtable">
-<p>If the Animancer Component has already been used or initialized, this will destroy its current graph and reinitialize it. </p>
-</blockquote>
-<blockquote class="doxtable">
-<p>Animancers Playables are connected to the same AnimationMixerPlayable that AnimatorControllers are sent to. </p>
-</blockquote>
+</div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>If the Animancer Component has already been used or initialized, this will destroy its current graph and reinitialize it. <br  />
+ <br  />
+Animancers Playables are connected to the same AnimationMixerPlayable that AnimatorControllers are sent to.</dd></dl>
 <p>Set weight to 1f to give Animancer full influence, and muteOtherConnections to true to set other connections on the Animation Mixer to 0f.</p>
 <p>If you need to access this mixer to change weights manually, you can do so with:</p>
 <div class="fragment"><div class="line"> cs</div>

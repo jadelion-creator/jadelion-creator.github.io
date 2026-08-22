@@ -32,6 +32,7 @@ var annotated_dup =
       [ "TrackProcessorAttribute", "class_timeline_mixer_1_1_track_processor_attribute.html", null ],
       [ "TrackProcessorManager", "class_timeline_mixer_1_1_track_processor_manager.html", "class_timeline_mixer_1_1_track_processor_manager" ],
       [ "LoopMode", "class_timeline_mixer_1_1_loop_mode.html", null ],
-      [ "TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", "class_timeline_mixer_1_1_timeline_mixer_utilities" ]
+      [ "TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", "class_timeline_mixer_1_1_timeline_mixer_utilities" ],
+      [ "TimelineMixerTheme", "class_timeline_mixer_1_1_timeline_mixer_theme.html", null ]
     ] ]
 ];

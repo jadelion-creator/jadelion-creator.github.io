@@ -101,9 +101,7 @@ $(function(){initNavTree('animator.html','',''); });
   <div class="headertitle"><div class="title">Animator Controllers </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><blockquote class="doxtable">
-<p>TimelineMixerComponent removes AnimatorController references from Animator components if the Animator is targeted by an animation track, and creates a new instance internally to enable mixing between timelines and the AnimatorController. </p>
-</blockquote>
+<div class="textblock"><dl class="section important"><dt>Important</dt><dd>TimelineMixerComponent removes AnimatorController references from Animator components if the Animator is targeted by an animation track, and creates a new instance internally to enable mixing between timelines and the AnimatorController.</dd></dl>
 <p>Timeline Mixer can be used alongside AnimatorControllers easily with little modification to your workflow. Simply create your controller and assign it to an Animator component.</p>
 <p>If a track on a Timeline targets the Animator, Timeline Mixer will consume the AnimatorController and remove the reference from the Animators object field.</p>
 <div class="image">
@@ -124,9 +122,7 @@ But... Why?</h2>
 <p>Timeline Mixer needs to play nice with Animator Controllers, and it can't do that if they're not on the same PlayableGraph.</p>
 <p>By bringing the AnimatorController into Timeline Mixers PlayableGraph, we can smoothly transition from the AnimatorController to a Timeline without any animation artifacts.</p>
 <p>The Animators object reference is removed to stop any animation conflicts.</p>
-<blockquote class="doxtable">
-<p>If TimelineMixerComponent is destroyed, it will attempt to return the AnimatorController to the component. </p>
-</blockquote>
+<dl class="section note"><dt>Note</dt><dd>If TimelineMixerComponent is destroyed, it will attempt to return the AnimatorController to the component. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

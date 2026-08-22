@@ -46,6 +46,9 @@ var hierarchy =
     [ "TimelineMixer.PlayableConnectionInfo", "class_timeline_mixer_1_1_playable_connection_info.html", null ],
     [ "TimelineMixer.PlayableNode", "class_timeline_mixer_1_1_playable_node.html", null ],
     [ "TimelineMixer.Editor.ResizeList", "class_timeline_mixer_1_1_editor_1_1_resize_list.html", null ],
+    [ "ScriptableObject", null, [
+      [ "TimelineMixer.TimelineMixerTheme", "class_timeline_mixer_1_1_timeline_mixer_theme.html", null ]
+    ] ],
     [ "TimelineMixer.Editor.SimpleEditorUtilities", "class_timeline_mixer_1_1_editor_1_1_simple_editor_utilities.html", null ],
     [ "TimelineMixer.TimelineEventData", "class_timeline_mixer_1_1_timeline_event_data.html", null ],
     [ "TimelineMixer.TimelineMixerUtilities", "class_timeline_mixer_1_1_timeline_mixer_utilities.html", null ],

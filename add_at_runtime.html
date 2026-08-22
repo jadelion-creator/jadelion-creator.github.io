@@ -104,14 +104,14 @@ $(function(){initNavTree('add_at_runtime.html','',''); });
 <div class="textblock"><p>Timeline Mixer supports adding and removing <span class="tt">TimelineAsset</span>s at runtime, allowing timelines to be dynamically loaded, disconnected, or destroyed as needed.</p>
 <p>This enables workflows such as conditional cutscenes, dynamic animation systems, or memory-conscious runtime setups.</p>
 <hr  />
- <h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+ <h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 Adding Timeline Assets</h2>
 <p>To add a timeline at runtime, call <span class="tt">AddTimeline</span> and provide the <span class="tt">TimelineAsset</span> to load:</p>
 <div class="fragment"><div class="line">TimelineMixerComponent timelineMixer = GetComponent&lt;TimelineMixerComponent&gt;();</div>
 <div class="line"> </div>
 <div class="line">timelineMixer.AddTimeline(TimelineAsset timelineAsset, <span class="keywordtype">bool</span> useDirectorBindings = <span class="keyword">true</span>);</div>
 </div><!-- fragment --><p>This registers the timeline with the Timeline Mixer and builds its playable graph.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Track Bindings</h2>
 <p>If <span class="tt">useDirectorBindings</span> is set to <span class="tt">true</span>, the Playable Director will be searched for matching track bindings and they will be applied automatically. All tracks with valid bindings will complete their graph construction.</p>
 <p>If <span class="tt">useDirectorBindings</span> is false, no bindings are applied automatically:</p>
@@ -127,11 +127,10 @@ Track Bindings</h2>
 <div class="fragment"><div class="line">cs</div>
 <div class="line">timelineMixer.RebindTrack(timelineAsset, &quot;trackName&quot;, newBinding);</div>
 <div class="line">timelineMixer.RebindTrack(&quot;timelineName&quot;, &quot;trackName&quot;, newBinding);</div>
-</div><!-- fragment --><blockquote class="doxtable">
-<p>To reconnect tracks that don't support bindings, use null as the bound object </p><div class="fragment"><div class="line">timelineMixer.RebindTrack(<span class="stringliteral">&quot;timelineName&quot;</span>, <span class="stringliteral">&quot;trackName&quot;</span>, <span class="keyword">null</span>);</div>
-</div><!-- fragment --> </blockquote>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>To reconnect tracks that don't support bindings, use null as the bound object <div class="fragment"><div class="line">timelineMixer.RebindTrack(<span class="stringliteral">&quot;timelineName&quot;</span>, <span class="stringliteral">&quot;trackName&quot;</span>, <span class="keyword">null</span>);</div>
+</div><!-- fragment --></dd></dl>
 <p>If a binding is null, you may still need to rebind the track manually or assign the binding in the editor using the edit button next to the timeline field on the Timeline Mixer Component.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Disconnecting Tracks</h2>
 <p>To completely disconnect a track from the playable graph use <b>DisconnectTrack</b></p>
 <div class="fragment"><div class="line"> cs</div>
@@ -145,11 +144,10 @@ Disconnecting Tracks</h2>
 <div class="image">
 <img src="NoBindings.png" alt=""/>
 </div>
-    <blockquote class="doxtable">
-<p>Note: Muting a track in the Timeline editor is not the same as disconnecting it.</p>
-<p>Muted tracks are not built by Timeline at runtime, and Timeline Mixer will not detect or manage them. </p>
-</blockquote>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+    <dl class="section important"><dt>Important</dt><dd>Muting a track in the Timeline editor is not the same as disconnecting it. <br  />
+ <br  />
+Muted tracks are not built by Timeline at runtime, and Timeline Mixer will not detect or manage them.</dd></dl>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 Removing Timeline Assets at Runtime</h2>
 <p>To completely remove a timeline from the component, use <span class="tt">RemoveTimeline</span></p>
 <div class="fragment"><div class="line"> cs</div>
